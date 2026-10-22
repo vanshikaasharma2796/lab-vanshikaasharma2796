@@ -1,0 +1,39 @@
+{
+  "loss_rule": {
+    "every_secs": 30,
+    "share_of_orders": 0.08,
+    "ignore_within_secs": 5
+  },
+  "high_case": 1.25,
+  "low_case_peak_share": 0.6,
+  "pre_stage_secs": [
+    25,
+    30
+  ],
+  "crew_forward_secs": [
+    10,
+    15
+  ],
+  "second_two_step_item_secs": [
+    10,
+    15
+  ],
+  "traffic_secs_per_pct": {
+    "exposed": [
+      1.5,
+      2
+    ],
+    "retrofitted": [
+      0.4,
+      0.6
+    ],
+    "dual_lane": [
+      0.25,
+      0.5
+    ]
+  },
+  "prep_station": {
+    "central": "window time at retrofitted single-lane kitchens",
+    "low_case_recovery": 0.75
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "teams-midwest-staffing-escalation",
+  "system": "Teams",
+  "source": "teams",
+  "channel": "Midwest Field Ops",
+  "title": "Greg Novak's stores: unfilled shifts before the launch",
+  "date": "2026-05-08",
+  "participants": ["Priya (Store Ops)", "Dana Whitfield (Midwest franchise business partner)", "People team"],
+  "access": ["corporate"],
+  "residency": "us",
+  "terms": ["staffing-fill-rate", "intervention", "drive-thru-time"],
+  "entities": ["Greg Novak", "Midwest"],
+  "messages": [
+    { "from": "Dana Whitfield", "at": "2026-05-06 16:02", "text": "Greg Novak's shift fill rate has slid every week since mid-March, from 96% to the high 80s. Prep time is creeping up at both his single-lane and dual-lane stores." },
+    { "from": "Priya", "at": "2026-05-07 09:18", "text": "So his drive-thru time was rising before the Double Stack launched. That is a staffing problem first, the launch only made it worse." },
+    { "from": "Dana Whitfield", "at": "2026-05-08 11:45", "text": "Agreed. I am booking a staffing review with Greg and People next week. If it keeps sliding for four weeks he goes on the corporate intervention list." }
+  ]
+}

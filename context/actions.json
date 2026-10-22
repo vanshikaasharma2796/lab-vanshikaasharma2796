@@ -1,0 +1,115 @@
+{
+  "description": "Actions the engine may propose after an answer. Nothing is written to a system without a decision; high-impact actions need an approver of the action's role (see policies/human-check.md). Template words: {stores} {portfolio} {count} {exposed} {week} {launch} {next} {nextDate}.",
+  "approvers": {
+    "Store Ops": ["priya"],
+    "Supply Chain": ["lena"],
+    "Ads": ["diego"],
+    "Customer Support": ["sam"],
+    "Service Analyst": ["maya"],
+    "Franchise Operator": ["marcus"]
+  },
+  "signoff": {
+    "description": "Who signs off a change to a context file, by the team that owns the file (the file's owner field). The author of a change never signs it off.",
+    "Store Ops": ["priya"],
+    "Supply Chain": ["lena"],
+    "Customer Support": ["sam"],
+    "Marketing": ["diego"],
+    "Brand": ["diego"],
+    "Central Reporting": ["maya"],
+    "Data Governance": ["maya"],
+    "Finance": ["maya"],
+    "Franchise Relations": ["priya"],
+    "People": ["priya"]
+  },
+  "high_impact": { "stores_at_least": 20, "dollars_at_least": 25000 },
+  "actions": {
+    "drive-thru-diagnosis": [
+      { "type": "ticket", "system": "ServiceNow", "title": "Service breach review for {stores}", "detail": "Diagnosis attached: window time on exposed single-lane kitchens drives the rise since the {launch} launch. Confirm the cause on site within 24 hours.", "owner_role": "Store Ops", "impact": "low" }
+    ],
+    "recovery-plan": [
+      { "type": "task", "system": "Jira", "title": "Pre-stage {launch} components at {stores} from tomorrow", "detail": "Ops playbook step 1 in the 10am and 4pm pre-rush. Review window time after five trading days.", "owner_role": "Franchise Operator", "impact": "auto" },
+      { "type": "message", "system": "Slack", "title": "Brief area coaches on the recovery plan for {portfolio}", "detail": "Share the playbook steps, the review date and the escalation trigger (window time above 50 sec).", "owner_role": "Store Ops", "impact": "low" }
+    ],
+    "store-priorities": [
+      { "type": "task", "system": "Jira", "title": "Store visit list for {portfolio}, {week}", "detail": "Visit the stores in the order given, highest revenue at risk first.", "owner_role": "Franchise Operator", "impact": "low" }
+    ],
+    "what-if-prestage": [
+      { "type": "task", "system": "Jira", "title": "Trial pre-staging at {stores}", "detail": "Run the pre-staging trial the what-if sized, and compare window time after five trading days.", "owner_role": "Franchise Operator", "impact": "auto" }
+    ],
+    "what-if-prep-station": [
+      { "type": "order", "system": "SAP", "title": "Request PPS-2 retrofit kits for the exposed single-lane kitchens in {portfolio}", "detail": "Kits for {exposed} exposed single-lane kitchens, allocated by revenue at risk per the kit decision record.", "owner_role": "Supply Chain", "impact": "high" }
+    ],
+    "diego/double-stack-by-region": [
+      { "type": "message", "system": "Slack", "title": "Flag the regions where single-lane stores are struggling with the {launch}", "detail": "Post the regional cut to #double-stack-promo so media plans follow kitchen capacity.", "owner_role": "Ads", "impact": "low" }
+    ],
+    "diego/rollout-back-on-track": [
+      { "type": "task", "system": "Jira", "title": "{launch} rollout recovery plan for {stores}", "detail": "Pre-staging everywhere first, then retrofits by revenue at risk, then media back on.", "owner_role": "Store Ops", "impact": "auto" }
+    ],
+    "diego/adjust-the-promo": [
+      { "type": "task", "system": "Jira", "title": "Shift {launch} promo spend toward dual-lane markets", "detail": "Hold paid media where exposed single-lane kitchens are over benchmark; keep it where kitchens cope.", "owner_role": "Ads", "impact": "high" }
+    ],
+    "diego/pause-double-stack": [
+      { "type": "ticket", "system": "ServiceNow", "title": "Decision request: pause the {launch} at single-lane stores", "detail": "The what-if sized the revenue impact. A pause changes the menu at many stores and needs a sign-off.", "owner_role": "Store Ops", "impact": "high" }
+    ],
+    "diego/delay-next-lto": [
+      { "type": "ticket", "system": "ServiceNow", "title": "Decision request: move the {next} launch from {nextDate}", "detail": "The what-if compared launching on {nextDate} with a two-week delay.", "owner_role": "Ads", "impact": "high" }
+    ],
+    "lena/southeast-sauce-short": [
+      { "type": "message", "system": "Slack", "title": "Post the Stack Sauce shortfall cause to #ops-southeast", "detail": "Allocation followed the launch plan mix; actual mix runs above it.", "owner_role": "Supply Chain", "impact": "low" }
+    ],
+    "lena/fastest-retrofit": [
+      { "type": "order", "system": "SAP", "title": "Ship PPS-2 kits and book install crews for {stores}", "detail": "Kits from the nearest distribution centre, installs ordered by revenue at risk, three crews at one install a night.", "owner_role": "Supply Chain", "impact": "high" }
+    ],
+    "lena/rebalance-stock": [
+      { "type": "order", "system": "SAP", "title": "Stock transfer between distribution centres, {week}", "detail": "Move Stack Sauce cases from the donor centres to the short region; donors keep their minimum days of cover.", "owner_role": "Supply Chain", "impact": "high" }
+    ],
+    "lena/retrofit-every-single-lane": [
+      { "type": "order", "system": "SAP", "title": "Purchase request: PPS-2 kits for every exposed single-lane kitchen", "detail": "The what-if sized the kits, cost and install time across {stores}.", "owner_role": "Supply Chain", "impact": "high" }
+    ],
+    "lena/honey-heat-readiness": [
+      { "type": "task", "system": "Jira", "title": "{next} readiness actions before {nextDate}", "detail": "Kitchens that are not ready get pre-staging and a review before launch; sauce and stock cover confirmed by region.", "owner_role": "Supply Chain", "impact": "auto" }
+    ],
+    "maya/monday-digest-lead": [
+      { "type": "message", "system": "Slack", "title": "Publish the Monday ops digest, {week}", "detail": "Lead with the findings in the order given.", "owner_role": "Service Analyst", "impact": "low" }
+    ],
+    "maya/marcus-first-moves": [
+      { "type": "task", "system": "Jira", "title": "First moves for {stores}", "detail": "Pre-staging tomorrow; retrofit request for the hardest-hit stores; review after five trading days.", "owner_role": "Franchise Operator", "impact": "auto" }
+    ],
+    "maya/revenue-at-risk-4-weeks": [
+      { "type": "message", "system": "Slack", "title": "Share the four-week revenue-at-risk projection for {portfolio}", "detail": "Low, central and high case, with the rule used.", "owner_role": "Service Analyst", "impact": "low" }
+    ],
+    "maya/marcus-three-prep-stations": [
+      { "type": "order", "system": "SAP", "title": "Request PPS-2 kits for the three hardest-hit stores in {portfolio}", "detail": "As sized by the what-if; allocation follows the kit decision record.", "owner_role": "Supply Chain", "impact": "high" }
+    ],
+    "priya/launch-or-staffing": [
+      { "type": "ticket", "system": "ServiceNow", "title": "Staffing review for operators whose fill rate slid before the launch", "detail": "Separate the staffing problem from the {launch} effect before choosing a fix.", "owner_role": "Store Ops", "impact": "low" }
+    ],
+    "priya/playbook-worst-stores": [
+      { "type": "task", "system": "Jira", "title": "Roll out ops playbook step 1 at the worst single-lane stores", "detail": "Pre-stage in the 10am and 4pm pre-rush from the next trading day; review after five trading days.", "owner_role": "Store Ops", "impact": "auto" }
+    ],
+    "priya/operators-intervention": [
+      { "type": "ticket", "system": "ServiceNow", "title": "Corporate ops reviews for the operators that qualify this quarter", "detail": "One review per qualifying operator, owned by Franchise Relations with Store Ops.", "owner_role": "Store Ops", "impact": "high" }
+    ],
+    "priya/traffic-up-8-percent": [
+      { "type": "message", "system": "Slack", "title": "Warn area coaches which segments break first if traffic rises", "detail": "Share the segments the what-if found closest to a service breach.", "owner_role": "Store Ops", "impact": "low" }
+    ],
+    "priya/prestage-everywhere": [
+      { "type": "task", "system": "Jira", "title": "Pre-staging at every single-lane store from Monday", "detail": "Network-wide ops playbook step 1, with a review after five trading days.", "owner_role": "Store Ops", "impact": "auto" }
+    ],
+    "sam/why-complaints-up": [
+      { "type": "message", "system": "Slack", "title": "Tell the care desk why wait-time complaints are up", "detail": "The cause is drive-thru wait at single-lane stores since the {launch} launch, not the burger itself.", "owner_role": "Customer Support", "impact": "low" }
+    ],
+    "sam/what-to-tell-customers": [
+      { "type": "message", "system": "Slack", "title": "Publish the wait-time reply script to the care desk", "detail": "Apologise, the store team is on it, $5 voucher; never promise a fix date.", "owner_role": "Customer Support", "impact": "low" }
+    ],
+    "sam/escalate-to-ops": [
+      { "type": "ticket", "system": "ServiceNow", "title": "Escalate the stores generating the most wait-time complaints, {week}", "detail": "One ticket per store over the escalation rule, ticket numbers attached, no customer details.", "owner_role": "Customer Support", "impact": "auto" }
+    ],
+    "sam/staff-for-4-weeks": [
+      { "type": "task", "system": "Jira", "title": "Care queue staffing plan for the next four weeks", "detail": "Agent hours sized from the forecast complaint volume and handling time.", "owner_role": "Customer Support", "impact": "high" }
+    ],
+    "sam/complaints-after-prestaging": [
+      { "type": "message", "system": "Slack", "title": "Share the complaint outlook once single-lane stores pre-stage", "detail": "When complaints should come back down, so the care desk can plan.", "owner_role": "Customer Support", "impact": "low" }
+    ]
+  }
+}

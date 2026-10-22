@@ -1,0 +1,72 @@
+{
+  "name": "MENU_CHANGE_LOG",
+  "schema": "GOLD",
+  "alias": "m",
+  "certified": true,
+  "owner": "Marketing",
+  "grain": "one row per menu event",
+  "description": "Launches, planned launches and ops alerts, with what each means for the kitchen.",
+  "lineage": [
+    "BRONZE.RAW_MENU_ITEMS",
+    "BRONZE.RAW_PROMO_EVENTS"
+  ],
+  "joins": {},
+  "columns": [
+    {
+      "name": "event_date",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "event_type",
+      "type": "TEXT",
+      "description": "launch, planned_launch or ops_alert"
+    },
+    {
+      "name": "item_name",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "sku_id",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "ops_impact_level",
+      "type": "TEXT",
+      "description": "low or high"
+    },
+    {
+      "name": "requires_two_step_prep",
+      "type": "BOOLEAN",
+      "description": ""
+    },
+    {
+      "name": "affected_regions",
+      "type": "TEXT",
+      "description": "ALL or a region"
+    },
+    {
+      "name": "notes",
+      "type": "TEXT",
+      "description": ""
+    }
+  ],
+  "dimensions": {
+    "event_date": "m.event_date",
+    "event_type": "m.event_type",
+    "item_name": "m.item_name",
+    "sku_id": "m.sku_id",
+    "ops_impact_level": "m.ops_impact_level",
+    "requires_two_step_prep": "m.requires_two_step_prep",
+    "affected_regions": "m.affected_regions",
+    "notes": "m.notes"
+  },
+  "metrics": {
+    "events": {
+      "sql": "COUNT(*)",
+      "as": "events"
+    }
+  }
+}

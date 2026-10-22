@@ -1,0 +1,18 @@
+{
+  "id": "marcus",
+  "name": "Marcus J. Williams",
+  "role": "Franchise Operator",
+  "emoji": "🧑‍🍳",
+  "blurb": "Runs 14 stores in the Southeast.",
+  "scope": {
+    "kind": "operator",
+    "operator": "Marcus J. Williams"
+  },
+  "voice": "operator",
+  "cares_about": [
+    "drive-thru time against benchmark at his own stores",
+    "revenue at his own stores",
+    "what to do this week"
+  ],
+  "answer_style": "Plain and direct. Say what is happening at his stores, then what to do about it. Dollar figures for his portfolio only."
+}

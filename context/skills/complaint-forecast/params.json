@@ -1,0 +1,5 @@
+{
+  "base_per_10k_orders": 3,
+  "per_sec_over": 0.55,
+  "ignore_within_secs": 5
+}

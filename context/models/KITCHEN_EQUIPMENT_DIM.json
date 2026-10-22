@@ -1,0 +1,63 @@
+{
+  "name": "KITCHEN_EQUIPMENT_DIM",
+  "schema": "GOLD",
+  "alias": "e",
+  "certified": true,
+  "owner": "Supply Chain",
+  "grain": "one row per store per equipment type",
+  "description": "The certified equipment register: what each kitchen has, including parallel prep stations.",
+  "lineage": [
+    "BRONZE.RAW_EQUIPMENT_REGISTER"
+  ],
+  "joins": {
+    "FRANCHISE_STORE_DIM": "USING (store_id)"
+  },
+  "columns": [
+    {
+      "name": "store_id",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "equipment_type",
+      "type": "TEXT",
+      "description": "grill, fryer, holding_pan or parallel_prep_station"
+    },
+    {
+      "name": "model",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "quantity",
+      "type": "INTEGER",
+      "description": ""
+    },
+    {
+      "name": "installed_date",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "status",
+      "type": "TEXT",
+      "description": ""
+    }
+  ],
+  "dimensions": {
+    "equipment_type": "e.equipment_type",
+    "model": "e.model",
+    "installed_date": "e.installed_date",
+    "status": "e.status"
+  },
+  "metrics": {
+    "stores": {
+      "sql": "COUNT(DISTINCT e.store_id)",
+      "as": "stores"
+    },
+    "units": {
+      "sql": "SUM(e.quantity)",
+      "as": "units"
+    }
+  }
+}

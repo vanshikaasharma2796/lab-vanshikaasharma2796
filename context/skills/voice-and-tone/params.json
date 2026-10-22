@@ -1,0 +1,34 @@
+{
+  "audiences": {
+    "operator": {
+      "person": "second",
+      "lead": "what is happening at your stores",
+      "close": "what to do next"
+    },
+    "operations": {
+      "person": "network",
+      "lead": "the finding, cut by kitchen format",
+      "close": "the playbook step"
+    },
+    "marketing": {
+      "person": "network",
+      "lead": "what the promo is earning",
+      "close": "the campaign decision"
+    },
+    "analyst": {
+      "person": "third",
+      "lead": "scope and definitions",
+      "close": "confidence and caveats"
+    },
+    "care": {
+      "person": "network",
+      "lead": "the count",
+      "close": "what agents say or do"
+    },
+    "supply": {
+      "person": "network",
+      "lead": "units, places and dates",
+      "close": "what ships and what is ordered"
+    }
+  }
+}

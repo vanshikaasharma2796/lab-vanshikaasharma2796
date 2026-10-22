@@ -1,0 +1,17 @@
+{
+  "id": "teams-southeast-operator-review",
+  "system": "Teams",
+  "source": "teams",
+  "channel": "Franchise Relations (confidential)",
+  "title": "Confidential: Marcus J. Williams portfolio review",
+  "date": "2026-05-11",
+  "participants": ["Franchise Relations", "Finance", "Priya (Store Ops)"],
+  "access": ["corporate"],
+  "residency": "us",
+  "terms": ["intervention", "revenue-at-risk", "drive-thru-time"],
+  "entities": ["Marcus J. Williams", "Southeast"],
+  "messages": [
+    { "from": "Franchise Relations", "at": "2026-05-11 17:20", "text": "Marcus J. Williams has six exposed single-lane stores over benchmark since the launch. If they are still 30 sec over after five trading days of pre-staging, he qualifies for a corporate ops review." },
+    { "from": "Finance", "at": "2026-05-11 17:48", "text": "His drive-thru revenue at risk is the largest in the Southeast this week. Keep this thread internal until the review is booked." }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "teams-care-queue-staffing",
+  "system": "Teams",
+  "source": "teams",
+  "channel": "Care desk leads",
+  "title": "Staffing the care queue through the launch",
+  "date": "2026-05-12",
+  "participants": ["Sam (Customer Support)", "Care desk team leads"],
+  "access": ["Customer Support", "Store Ops", "Service Analyst"],
+  "residency": "us",
+  "terms": ["wait-time-complaint", "staffing-fill-rate"],
+  "entities": [],
+  "messages": [
+    { "from": "Sam", "at": "2026-05-12 15:30", "text": "Wait-time tickets have climbed every day since the Double Stack launch. Plan the care queue for the next four weeks at 12 minutes a ticket." },
+    { "from": "Team lead", "at": "2026-05-12 15:52", "text": "We can add two agents on the lunch shift from Monday. Anything beyond that needs a budget sign-off." }
+  ]
+}

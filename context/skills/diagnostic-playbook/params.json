@@ -1,0 +1,11 @@
+{
+  "step_labels": {
+    "scope": "scope",
+    "confirm": "confirm",
+    "seasonality": "rule out seasonality",
+    "spread": "spread",
+    "decompose": "decompose",
+    "correlate": "correlate",
+    "quantify": "quantify"
+  }
+}

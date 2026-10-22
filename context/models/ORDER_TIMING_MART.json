@@ -1,0 +1,166 @@
+{
+  "name": "ORDER_TIMING_MART",
+  "schema": "GOLD",
+  "alias": "t",
+  "certified": true,
+  "owner": "Store Ops",
+  "grain": "one row per store per day",
+  "description": "Certified drive-thru timing: gate-to-window seconds, its three segments, the store's benchmark and how it compares.",
+  "lineage": [
+    "BRONZE.RAW_ORDER_TIMING_DAILY",
+    "BRONZE.RAW_STORES"
+  ],
+  "joins": {
+    "FRANCHISE_STORE_DIM": "USING (store_id)",
+    "DAILY_SALES_FACT": "ON d.store_id = t.store_id AND d.date = t.date",
+    "STAFFING_DAILY_FACT": "ON s.store_id = t.store_id AND s.date = t.date"
+  },
+  "columns": [
+    {
+      "name": "store_id",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "date",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "week_start",
+      "type": "TEXT",
+      "description": "Monday of the reporting week"
+    },
+    {
+      "name": "avg_dt_secs",
+      "type": "REAL",
+      "description": "Drive-thru time, gate to window"
+    },
+    {
+      "name": "avg_order_time_secs",
+      "type": "REAL",
+      "description": "Order segment"
+    },
+    {
+      "name": "avg_prep_time_secs",
+      "type": "REAL",
+      "description": "Prep segment"
+    },
+    {
+      "name": "avg_window_time_secs",
+      "type": "REAL",
+      "description": "Window segment"
+    },
+    {
+      "name": "benchmark_dt_secs",
+      "type": "REAL",
+      "description": "165 single-lane, 185 dual-lane"
+    },
+    {
+      "name": "secs_vs_benchmark",
+      "type": "REAL",
+      "description": "Positive = over benchmark"
+    },
+    {
+      "name": "pct_within_benchmark",
+      "type": "REAL",
+      "description": "Share of orders served inside benchmark, 0–1"
+    },
+    {
+      "name": "is_above_benchmark",
+      "type": "BOOLEAN",
+      "description": ""
+    },
+    {
+      "name": "total_dt_transactions",
+      "type": "INTEGER",
+      "description": "Drive-thru orders that day"
+    },
+    {
+      "name": "precipitation_in",
+      "type": "REAL",
+      "description": ""
+    },
+    {
+      "name": "avg_temp_f",
+      "type": "REAL",
+      "description": ""
+    },
+    {
+      "name": "weather_condition",
+      "type": "TEXT",
+      "description": ""
+    }
+  ],
+  "dimensions": {
+    "date": "t.date",
+    "week_start": "t.week_start"
+  },
+  "metrics": {
+    "stores": {
+      "sql": "COUNT(DISTINCT t.store_id)",
+      "as": "stores"
+    },
+    "days": {
+      "sql": "COUNT(DISTINCT t.date)",
+      "as": "days"
+    },
+    "drive_thru_time": {
+      "sql": "AVG(t.avg_dt_secs)",
+      "as": "avg_dt_secs",
+      "round": 1,
+      "term": "drive-thru-time"
+    },
+    "benchmark": {
+      "sql": "AVG(t.benchmark_dt_secs)",
+      "as": "benchmark",
+      "round": 1,
+      "term": "benchmark"
+    },
+    "secs_vs_benchmark": {
+      "sql": "AVG(t.secs_vs_benchmark)",
+      "as": "secs_vs_benchmark",
+      "round": 1,
+      "term": "benchmark"
+    },
+    "pct_in_benchmark": {
+      "sql": "AVG(t.pct_within_benchmark) * 100",
+      "as": "pct_in_benchmark",
+      "round": 0,
+      "term": "benchmark"
+    },
+    "order_time": {
+      "sql": "AVG(t.avg_order_time_secs)",
+      "as": "order_s",
+      "round": 1
+    },
+    "prep_time": {
+      "sql": "AVG(t.avg_prep_time_secs)",
+      "as": "prep_s",
+      "round": 1
+    },
+    "window_time": {
+      "sql": "AVG(t.avg_window_time_secs)",
+      "as": "window_s",
+      "round": 1
+    },
+    "dt_orders_per_day": {
+      "sql": "AVG(t.total_dt_transactions)",
+      "as": "daily_dt_orders",
+      "round": 0
+    },
+    "dt_orders": {
+      "sql": "SUM(t.total_dt_transactions)",
+      "as": "dt_orders"
+    },
+    "rain": {
+      "sql": "AVG(t.precipitation_in)",
+      "as": "rain_in",
+      "round": 2
+    },
+    "stores_over": {
+      "sql": "COUNT(DISTINCT CASE WHEN t.is_above_benchmark THEN t.store_id END)",
+      "as": "stores_over"
+    }
+  }
+}

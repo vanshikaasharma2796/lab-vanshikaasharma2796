@@ -1,0 +1,18 @@
+{
+  "id": "email-care-desk-buckhead-wait",
+  "system": "Email",
+  "source": "email-care",
+  "channel": "care desk inbox",
+  "title": "Customer escalation: nine-minute wait at Atlanta Buckhead",
+  "date": "2026-05-12",
+  "participants": ["Care desk", "Sam (Customer Support)", "a customer"],
+  "access": ["*"],
+  "residency": "us",
+  "terms": ["wait-time-complaint", "double-stack", "service-breach"],
+  "entities": ["Atlanta Buckhead", "Southeast"],
+  "messages": [
+    { "from": "Customer", "at": "2026-05-11 13:22", "text": "I waited nine minutes at the Atlanta Buckhead drive-thru for a Double Stack at lunch. Please call me back on (404) 555-0182 or write to jordan.miles@example.com." },
+    { "from": "Care desk", "at": "2026-05-11 14:05", "text": "Logged as a wait-time complaint. Apologised, offered the $5 voucher, and did not promise a fix date." },
+    { "from": "Sam", "at": "2026-05-12 09:30", "text": "Atlanta Buckhead is our top store for wait-time tickets this week. Escalating it to Store Ops with the ticket numbers, not the customer details." }
+  ]
+}

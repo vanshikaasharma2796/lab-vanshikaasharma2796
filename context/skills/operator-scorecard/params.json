@@ -1,0 +1,13 @@
+{
+  "trigger": {
+    "stores": 5,
+    "secs_over": 30
+  },
+  "drift": {
+    "secs_over": 5,
+    "weeks": 4
+  },
+  "watch": {
+    "secs_over": 20
+  }
+}

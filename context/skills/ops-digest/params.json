@@ -1,0 +1,12 @@
+{
+  "max_findings": 3,
+  "rank_by": [
+    "dollars",
+    "decision needed"
+  ],
+  "each_has": [
+    "number",
+    "decision",
+    "caveat"
+  ]
+}

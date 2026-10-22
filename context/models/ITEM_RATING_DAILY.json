@@ -1,0 +1,48 @@
+{
+  "name": "ITEM_RATING_DAILY",
+  "schema": "GOLD",
+  "alias": "r",
+  "certified": true,
+  "owner": "Marketing",
+  "grain": "one row per item per day",
+  "description": "In-app star ratings by item.",
+  "lineage": [],
+  "joins": {},
+  "columns": [
+    {
+      "name": "date",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "item_name",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "ratings",
+      "type": "INTEGER",
+      "description": "Number of ratings"
+    },
+    {
+      "name": "avg_rating",
+      "type": "REAL",
+      "description": "Out of 5"
+    }
+  ],
+  "dimensions": {
+    "date": "r.date",
+    "item_name": "r.item_name"
+  },
+  "metrics": {
+    "ratings": {
+      "sql": "SUM(r.ratings)",
+      "as": "ratings"
+    },
+    "avg_rating": {
+      "sql": "SUM(r.avg_rating * r.ratings) / SUM(r.ratings)",
+      "as": "avg_rating",
+      "round": 1
+    }
+  }
+}

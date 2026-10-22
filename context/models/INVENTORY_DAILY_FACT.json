@@ -1,0 +1,83 @@
+{
+  "name": "INVENTORY_DAILY_FACT",
+  "schema": "GOLD",
+  "alias": "i",
+  "certified": true,
+  "owner": "Supply Chain",
+  "grain": "one row per store per component per day",
+  "description": "Certified store stock for Double Stack components: usage, on hand, days of cover and hours out of stock.",
+  "lineage": [
+    "BRONZE.RAW_INVENTORY_COUNTS"
+  ],
+  "joins": {
+    "FRANCHISE_STORE_DIM": "USING (store_id)"
+  },
+  "columns": [
+    {
+      "name": "store_id",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "date",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "component",
+      "type": "TEXT",
+      "description": "Stack Sauce or Beef Patty 4:1"
+    },
+    {
+      "name": "daily_usage_units",
+      "type": "REAL",
+      "description": ""
+    },
+    {
+      "name": "on_hand_units",
+      "type": "REAL",
+      "description": ""
+    },
+    {
+      "name": "days_of_cover",
+      "type": "REAL",
+      "description": "On hand over daily usage"
+    },
+    {
+      "name": "stockout_hours",
+      "type": "REAL",
+      "description": "Hours with none on hand"
+    }
+  ],
+  "dimensions": {
+    "date": "i.date",
+    "component": "i.component",
+    "days_of_cover": "i.days_of_cover"
+  },
+  "metrics": {
+    "stores": {
+      "sql": "COUNT(DISTINCT i.store_id)",
+      "as": "stores"
+    },
+    "days_of_cover": {
+      "sql": "AVG(i.days_of_cover)",
+      "as": "days_of_cover",
+      "round": 1,
+      "term": "days-of-cover"
+    },
+    "stockout_hours": {
+      "sql": "SUM(i.stockout_hours)",
+      "as": "stockout_hours",
+      "round": 0
+    },
+    "stores_out": {
+      "sql": "COUNT(DISTINCT CASE WHEN i.stockout_hours > 0 THEN i.store_id END)",
+      "as": "stores_out"
+    },
+    "usage_per_day": {
+      "sql": "SUM(i.daily_usage_units) / COUNT(DISTINCT i.date)",
+      "as": "usage_per_day",
+      "round": 0
+    }
+  }
+}

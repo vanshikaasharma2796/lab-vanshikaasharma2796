@@ -1,0 +1,29 @@
+{
+  "pre_rush": [
+    "10am",
+    "4pm"
+  ],
+  "steps": {
+    "pre-stage": {
+      "label": "Pre-stage the item's components in the pre-rush",
+      "effect": "pre_stage_secs",
+      "cost": "none",
+      "starts": "next day"
+    },
+    "crew-forward": {
+      "label": "Move one crew member forward into the pre-rush",
+      "effect": "crew_forward_secs",
+      "cost": "none",
+      "starts": "next day"
+    },
+    "parallel-prep-station": {
+      "label": "Fit a parallel prep station",
+      "effect": "matches kitchens that have one",
+      "cost": "retrofit kit",
+      "starts": "on install"
+    }
+  },
+  "review_after_trading_days": 5,
+  "working_below_window_secs": 45,
+  "escalate_above_window_secs": 50
+}

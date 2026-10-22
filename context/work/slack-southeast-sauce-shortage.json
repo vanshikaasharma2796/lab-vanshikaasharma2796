@@ -1,0 +1,19 @@
+{
+  "id": "slack-southeast-sauce-shortage",
+  "system": "Slack",
+  "source": "slack",
+  "channel": "#ops-southeast",
+  "title": "Stack Sauce running short in the Southeast",
+  "date": "2026-05-12",
+  "participants": ["Tasha Reed (Southeast area coach)", "Lena (Supply Chain)", "Marcus J. Williams"],
+  "access": ["*"],
+  "residency": "us",
+  "terms": ["stack-sauce", "days-of-cover", "double-stack"],
+  "entities": ["Southeast", "Marcus J. Williams", "Atlanta Buckhead"],
+  "messages": [
+    { "from": "Tasha Reed", "at": "2026-05-11 08:12", "text": "Atlanta Buckhead and two other Atlanta stores ran out of Stack Sauce for part of Saturday. Crew pulled the Double Stack from the board for about five hours." },
+    { "from": "Marcus J. Williams", "at": "2026-05-11 08:40", "text": "Same at Charlotte Uptown on Sunday lunch. We are selling far more Double Stacks than the plan mix said." },
+    { "from": "Lena", "at": "2026-05-11 09:05", "text": "Confirmed. The Southeast was allocated on the 22% plan mix and is running well above it. Atlanta DC is the lowest of the four centres and the next delivery is not until May 19." },
+    { "from": "Lena", "at": "2026-05-12 10:30", "text": "Proposal: move sauce cases from Columbus DC to Atlanta DC this week, two days in transit. Columbus keeps enough cover for the Midwest. Needs a Supply Chain sign-off before it ships." }
+  ]
+}

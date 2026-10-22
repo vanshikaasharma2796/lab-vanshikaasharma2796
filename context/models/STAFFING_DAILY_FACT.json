@@ -1,0 +1,69 @@
+{
+  "name": "STAFFING_DAILY_FACT",
+  "schema": "GOLD",
+  "alias": "s",
+  "certified": true,
+  "owner": "People",
+  "grain": "one row per store per day",
+  "description": "Certified staffing: scheduled and worked crew hours and the shift fill rate.",
+  "lineage": [
+    "BRONZE.RAW_STAFFING_DAILY"
+  ],
+  "joins": {
+    "FRANCHISE_STORE_DIM": "USING (store_id)",
+    "ORDER_TIMING_MART": "ON t.store_id = s.store_id AND t.date = s.date"
+  },
+  "columns": [
+    {
+      "name": "store_id",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "date",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "scheduled_crew_hours",
+      "type": "REAL",
+      "description": ""
+    },
+    {
+      "name": "worked_crew_hours",
+      "type": "REAL",
+      "description": ""
+    },
+    {
+      "name": "shift_fill_rate",
+      "type": "REAL",
+      "description": "Worked over scheduled, 0–1"
+    },
+    {
+      "name": "crew_hours_per_100_tx",
+      "type": "REAL",
+      "description": "Worked crew hours per 100 orders"
+    }
+  ],
+  "dimensions": {
+    "date": "s.date",
+    "week_start": "date(s.date, 'weekday 0', '-6 days')"
+  },
+  "metrics": {
+    "stores": {
+      "sql": "COUNT(DISTINCT s.store_id)",
+      "as": "stores"
+    },
+    "fill_rate": {
+      "sql": "AVG(s.shift_fill_rate) * 100",
+      "as": "fill_rate_pct",
+      "round": 1,
+      "term": "staffing-fill-rate"
+    },
+    "crew_hours_per_100_orders": {
+      "sql": "AVG(s.crew_hours_per_100_tx)",
+      "as": "crew_hours_per_100_orders",
+      "round": 1
+    }
+  }
+}

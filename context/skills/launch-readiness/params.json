@@ -1,0 +1,4 @@
+{
+  "max_window_secs": 45,
+  "requires": "parallel staging or window time under the limit"
+}

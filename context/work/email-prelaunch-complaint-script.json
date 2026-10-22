@@ -1,0 +1,17 @@
+{
+  "id": "email-prelaunch-complaint-script",
+  "system": "Email",
+  "source": "email-care",
+  "channel": "care desk inbox",
+  "title": "Pre-launch: draft wait-time complaint script",
+  "date": "2026-03-27",
+  "participants": ["Sam (Customer Support)", "Marketing"],
+  "access": ["*"],
+  "residency": "us",
+  "terms": ["wait-time-complaint", "double-stack", "lto"],
+  "entities": [],
+  "messages": [
+    { "from": "Marketing", "at": "2026-03-27 10:15", "text": "Draft script for wait-time complaints during the Double Stack launch: apologise, offer a voucher, explain it is a new two-step item." },
+    { "from": "Sam", "at": "2026-03-27 11:02", "text": "Fine for now. We will replace it with the care desk guide before launch." }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "segments": [
+    "order",
+    "prep",
+    "window"
+  ],
+  "bottleneck_rule": "largest change since the baseline"
+}

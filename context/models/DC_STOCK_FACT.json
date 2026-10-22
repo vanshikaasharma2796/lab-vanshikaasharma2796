@@ -1,0 +1,77 @@
+{
+  "name": "DC_STOCK_FACT",
+  "schema": "GOLD",
+  "alias": "dc",
+  "certified": true,
+  "owner": "Supply Chain",
+  "grain": "one row per distribution centre per item",
+  "description": "Certified distribution-centre stock: Stack Sauce cases and retrofit kits, with usage, next delivery, lead time and unit cost.",
+  "lineage": [
+    "BRONZE.RAW_DC_STOCK"
+  ],
+  "joins": {},
+  "columns": [
+    {
+      "name": "dc_name",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "region",
+      "type": "TEXT",
+      "description": "Region the centre serves"
+    },
+    {
+      "name": "item",
+      "type": "TEXT",
+      "description": "Stack Sauce or PPS-2 retrofit kit"
+    },
+    {
+      "name": "on_hand",
+      "type": "REAL",
+      "description": ""
+    },
+    {
+      "name": "unit",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "weekly_usage",
+      "type": "REAL",
+      "description": "Regional usage per week, same unit"
+    },
+    {
+      "name": "next_delivery_date",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "lead_time_days",
+      "type": "INTEGER",
+      "description": "Supplier lead time"
+    },
+    {
+      "name": "unit_cost_usd",
+      "type": "REAL",
+      "description": "For a kit: installed cost"
+    }
+  ],
+  "dimensions": {
+    "dc_name": "dc.dc_name",
+    "region": "dc.region",
+    "item": "dc.item",
+    "unit": "dc.unit",
+    "next_delivery_date": "dc.next_delivery_date",
+    "lead_time_days": "dc.lead_time_days",
+    "unit_cost_usd": "dc.unit_cost_usd",
+    "on_hand": "dc.on_hand",
+    "weekly_usage": "dc.weekly_usage"
+  },
+  "metrics": {
+    "on_hand_total": {
+      "sql": "SUM(dc.on_hand)",
+      "as": "on_hand_total"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "description": "Which executor handles a request. Rules are tried in order; the first whose `when` matches wins. `when` keys: guard (pass | masked | blocked), route (bank | match | lookup | out-of-scope | none | blocked), intent. A list matches any of its values.",
+  "rules": [
+    { "id": "guard-blocked", "when": { "guard": "blocked" }, "executor": "refusal", "what": "refuse, and say which guard rule fired" },
+    { "id": "known-question", "when": { "route": ["bank", "match"] }, "executor": "rule", "what": "deterministic analysis that follows the playbook" },
+    { "id": "metric-lookup", "when": { "route": "lookup" }, "executor": "semantic-lookup", "what": "a certified metric read straight from the semantic layer" },
+    { "id": "persona-scope", "when": { "route": "out-of-scope" }, "executor": "refusal", "what": "persona-scope refusal, with the same view of the asker's own stores" },
+    { "id": "no-certified-answer", "when": { "route": "none" }, "executor": "model", "model": "not connected", "fallback": "no-match answer", "what": "a language model could attempt it; none is connected, so the no-match answer is given" }
+  ],
+  "default": { "id": "default", "executor": "rule", "what": "deterministic analysis" }
+}

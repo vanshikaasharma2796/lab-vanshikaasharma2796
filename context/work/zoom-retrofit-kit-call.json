@@ -1,0 +1,18 @@
+{
+  "id": "zoom-retrofit-kit-call",
+  "system": "Zoom",
+  "source": "zoom-us",
+  "channel": "Weekly supply call",
+  "title": "Call notes: PPS-2 retrofit kits and install crews",
+  "date": "2026-05-12",
+  "participants": ["Lena (Supply Chain)", "Priya (Store Ops)", "Install contractor"],
+  "access": ["corporate"],
+  "residency": "us",
+  "terms": ["retrofit-kit", "parallel-staging", "revenue-at-risk"],
+  "entities": ["Linda Hartmann", "Midwest", "Southeast"],
+  "messages": [
+    { "from": "Lena", "at": "2026-05-12 14:00", "text": "Kits on hand at the four distribution centres cover the worst kitchens first; everything else is on the supplier lead time." },
+    { "from": "Install contractor", "at": "2026-05-12 14:12", "text": "Three crews available, one overnight install per crew per night, starting the night after a kit lands." },
+    { "from": "Priya", "at": "2026-05-12 14:20", "text": "Linda Hartmann's pilot kitchens held window time through the launch. Rank the installs by revenue at risk, not by who asks first." }
+  ]
+}

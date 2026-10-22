@@ -1,0 +1,83 @@
+{
+  "name": "FRANCHISE_STORE_DIM",
+  "schema": "GOLD",
+  "alias": "f",
+  "certified": true,
+  "owner": "Franchise Relations",
+  "grain": "one row per active store",
+  "description": "Every active store with its operator, region and kitchen format. The only place lane type and parallel staging are certified.",
+  "lineage": [
+    "BRONZE.RAW_STORES",
+    "BRONZE.RAW_FRANCHISE_OWNERS",
+    "BRONZE.RAW_EQUIPMENT_REGISTER"
+  ],
+  "joins": {},
+  "columns": [
+    {
+      "name": "store_id",
+      "type": "TEXT",
+      "description": "Store key"
+    },
+    {
+      "name": "store_name",
+      "type": "TEXT",
+      "description": "City and neighbourhood"
+    },
+    {
+      "name": "city",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "state",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "region",
+      "type": "TEXT",
+      "description": "Franchise region: Southeast, Midwest, Northeast, West"
+    },
+    {
+      "name": "operator_id",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "operator_name",
+      "type": "TEXT",
+      "description": "Franchise operator who owns the store"
+    },
+    {
+      "name": "lane_type",
+      "type": "TEXT",
+      "description": "single_lane or dual_lane"
+    },
+    {
+      "name": "has_parallel_staging",
+      "type": "BOOLEAN",
+      "description": "TRUE if the kitchen has a parallel prep station"
+    },
+    {
+      "name": "opened_date",
+      "type": "TEXT",
+      "description": ""
+    }
+  ],
+  "dimensions": {
+    "store_id": "f.store_id",
+    "store_name": "f.store_name",
+    "city": "f.city",
+    "state": "f.state",
+    "region": "f.region",
+    "operator_name": "f.operator_name",
+    "lane_type": "f.lane_type",
+    "has_parallel_staging": "f.has_parallel_staging"
+  },
+  "metrics": {
+    "stores": {
+      "sql": "COUNT(DISTINCT f.store_id)",
+      "as": "stores"
+    }
+  }
+}

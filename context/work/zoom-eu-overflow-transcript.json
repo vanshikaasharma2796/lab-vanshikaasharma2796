@@ -1,0 +1,17 @@
+{
+  "id": "zoom-eu-overflow-transcript",
+  "system": "Zoom",
+  "source": "eu-call-centre",
+  "channel": "EU overflow call centre (Dublin)",
+  "title": "Transcript: after-hours wait-time complaints about the Double Stack",
+  "date": "2026-05-12",
+  "participants": ["Overflow agent", "a customer"],
+  "access": ["Customer Support"],
+  "residency": "eu",
+  "terms": ["wait-time-complaint", "double-stack"],
+  "entities": ["Southeast"],
+  "messages": [
+    { "from": "Overflow agent", "at": "2026-05-12 22:41", "text": "Caller complained about a long drive-thru wait for the Double Stack and asked for a callback on +1 404 555 0199. Logged as a wait-time complaint." },
+    { "from": "Overflow agent", "at": "2026-05-12 23:05", "text": "Third after-hours call tonight about drive-thru waits since the Double Stack launch. Flagging to the US care desk." }
+  ]
+}

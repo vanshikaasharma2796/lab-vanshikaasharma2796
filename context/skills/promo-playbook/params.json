@@ -1,0 +1,5 @@
+{
+  "push_where": "stores with parallel staging",
+  "hold_where": "exposed single-lane stores above the readiness limit",
+  "resume_below_window_secs": 45
+}

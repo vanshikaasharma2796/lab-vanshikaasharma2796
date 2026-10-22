@@ -1,0 +1,95 @@
+{
+  "name": "CARE_TICKET_FACT",
+  "schema": "GOLD",
+  "alias": "k",
+  "certified": true,
+  "owner": "Customer Support",
+  "grain": "one row per care ticket",
+  "description": "Certified customer complaints, tagged at intake with a category, where a wait happened and whether the Double Stack was named.",
+  "lineage": [
+    "BRONZE.RAW_SUPPORT_TICKETS"
+  ],
+  "joins": {
+    "FRANCHISE_STORE_DIM": "USING (store_id)"
+  },
+  "columns": [
+    {
+      "name": "ticket_id",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "date",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "store_id",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "channel",
+      "type": "TEXT",
+      "description": "app, call_centre or social"
+    },
+    {
+      "name": "category",
+      "type": "TEXT",
+      "description": "wait_time, order_accuracy, food_quality, staff, app or other"
+    },
+    {
+      "name": "wait_location",
+      "type": "TEXT",
+      "description": "drive_thru or in_store, for wait_time tickets"
+    },
+    {
+      "name": "mentions_double_stack",
+      "type": "BOOLEAN",
+      "description": ""
+    },
+    {
+      "name": "about_item",
+      "type": "TEXT",
+      "description": "Item a product complaint is about"
+    },
+    {
+      "name": "handle_minutes",
+      "type": "INTEGER",
+      "description": ""
+    }
+  ],
+  "dimensions": {
+    "date": "k.date",
+    "channel": "k.channel",
+    "category": "k.category",
+    "wait_location": "k.wait_location",
+    "about_item": "k.about_item",
+    "week_start": "date(k.date, 'weekday 0', '-6 days')",
+    "mentions_double_stack": "k.mentions_double_stack"
+  },
+  "metrics": {
+    "tickets": {
+      "sql": "COUNT(*)",
+      "as": "tickets",
+      "term": "wait-time-complaint"
+    },
+    "stores": {
+      "sql": "COUNT(DISTINCT k.store_id)",
+      "as": "stores"
+    },
+    "days": {
+      "sql": "COUNT(DISTINCT k.date)",
+      "as": "days"
+    },
+    "naming_double_stack": {
+      "sql": "SUM(k.mentions_double_stack)",
+      "as": "naming_double_stack"
+    },
+    "handle_minutes": {
+      "sql": "AVG(k.handle_minutes)",
+      "as": "handle_minutes",
+      "round": 1
+    }
+  }
+}

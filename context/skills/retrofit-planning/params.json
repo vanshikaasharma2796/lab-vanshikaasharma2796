@@ -1,0 +1,6 @@
+{
+  "install_crews": 3,
+  "installs_per_crew_per_night": 1,
+  "prioritise_by": "revenue at risk per store",
+  "ship_days": 1
+}

@@ -1,0 +1,132 @@
+{
+  "name": "DAILY_SALES_FACT",
+  "schema": "GOLD",
+  "alias": "d",
+  "certified": true,
+  "owner": "Finance",
+  "grain": "one row per store per day",
+  "description": "Certified sales by store and day: orders, ticket, revenue and how many drive-thru orders included the Double Stack.",
+  "lineage": [
+    "BRONZE.RAW_POS_DAILY"
+  ],
+  "joins": {
+    "FRANCHISE_STORE_DIM": "USING (store_id)",
+    "ORDER_TIMING_MART": "ON t.store_id = d.store_id AND t.date = d.date"
+  },
+  "columns": [
+    {
+      "name": "store_id",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "date",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "total_transactions",
+      "type": "INTEGER",
+      "description": "All orders"
+    },
+    {
+      "name": "dt_transactions",
+      "type": "INTEGER",
+      "description": "Drive-thru orders"
+    },
+    {
+      "name": "avg_ticket_usd",
+      "type": "REAL",
+      "description": ""
+    },
+    {
+      "name": "total_revenue_usd",
+      "type": "REAL",
+      "description": ""
+    },
+    {
+      "name": "combo_transactions",
+      "type": "INTEGER",
+      "description": ""
+    },
+    {
+      "name": "non_combo_transactions",
+      "type": "INTEGER",
+      "description": ""
+    },
+    {
+      "name": "double_stack_transactions",
+      "type": "INTEGER",
+      "description": "Drive-thru orders that included a Double Stack"
+    },
+    {
+      "name": "combo_attach_rate",
+      "type": "REAL",
+      "description": ""
+    }
+  ],
+  "dimensions": {
+    "date": "d.date",
+    "week_start": "date(d.date, 'weekday 0', '-6 days')"
+  },
+  "metrics": {
+    "stores": {
+      "sql": "COUNT(DISTINCT d.store_id)",
+      "as": "stores"
+    },
+    "days": {
+      "sql": "COUNT(DISTINCT d.date)",
+      "as": "days"
+    },
+    "orders_per_day": {
+      "sql": "AVG(d.total_transactions)",
+      "as": "daily_orders",
+      "round": 0
+    },
+    "dt_orders_per_day": {
+      "sql": "AVG(d.dt_transactions)",
+      "as": "daily_dt_orders",
+      "round": 0
+    },
+    "avg_ticket": {
+      "sql": "AVG(d.avg_ticket_usd)",
+      "as": "avg_ticket",
+      "round": 2
+    },
+    "revenue": {
+      "sql": "SUM(d.total_revenue_usd)",
+      "as": "revenue_usd",
+      "round": 0
+    },
+    "revenue_per_day": {
+      "sql": "SUM(d.total_revenue_usd) / COUNT(DISTINCT d.date)",
+      "as": "revenue_per_day",
+      "round": 0
+    },
+    "double_stack_orders": {
+      "sql": "SUM(d.double_stack_transactions)",
+      "as": "ds_orders",
+      "term": "double-stack"
+    },
+    "dt_orders": {
+      "sql": "SUM(d.dt_transactions)",
+      "as": "dt_orders"
+    },
+    "double_stack_share": {
+      "sql": "100.0 * SUM(d.double_stack_transactions) / NULLIF(SUM(d.dt_transactions), 0)",
+      "as": "ds_share_pct",
+      "round": 0,
+      "term": "double-stack"
+    },
+    "combo_orders_per_day": {
+      "sql": "SUM(d.combo_transactions) * 1.0 / COUNT(DISTINCT d.date)",
+      "as": "combo_orders_per_day",
+      "round": 0,
+      "term": "combo-revenue"
+    },
+    "combo_orders": {
+      "sql": "SUM(d.combo_transactions)",
+      "as": "combo_orders"
+    }
+  }
+}

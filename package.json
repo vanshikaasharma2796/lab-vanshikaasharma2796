@@ -1,0 +1,24 @@
+{
+  "name": "mccontext-talk-to-data",
+  "version": "1.0.0",
+  "private": true,
+  "description": "McContext Burger · Talk to Data: two AI analysts answer the same question on the same warehouse, with and without the Regenesys AI context layer. Runs offline from index.html.",
+  "scripts": {
+    "test": "node tools/validate.js",
+    "validate": "node tools/validate.js",
+    "ask": "node tools/ask.js",
+    "sql": "node tools/sql.js",
+    "build:context": "node tools/build-context.js",
+    "build:wasm": "node tools/embed-wasm.js",
+    "serve": "node tools/server.js",
+    "mcp": "node tools/mcp.js",
+    "eval": "node tools/eval.js",
+    "golden": "node tools/golden.js",
+    "scenario": "node tools/scenario.js",
+    "lifecycle": "node tools/lifecycle.js",
+    "bundle:web": "node tools/web-bundle.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "target_cover_days": 4,
+  "donor_keeps_days": 9,
+  "transit_days": 2,
+  "launch_plan_mix_pct": 22
+}

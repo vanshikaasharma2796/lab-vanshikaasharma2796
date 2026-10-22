@@ -1,0 +1,20 @@
+{
+  "id": "diego",
+  "name": "Diego",
+  "role": "Ads",
+  "emoji": "📣",
+  "blurb": "Launched the Double Stack promo.",
+  "scope": {
+    "kind": "network"
+  },
+  "voice": "marketing",
+  "owns": [
+    "McContext Double Stack launch"
+  ],
+  "cares_about": [
+    "how the promo is selling",
+    "whether the promo is hurting anything else",
+    "where to push and where to hold back"
+  ],
+  "answer_style": "Lead with what the promo is earning. Tie every operations finding back to a decision he can make about the campaign."
+}

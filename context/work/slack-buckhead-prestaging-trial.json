@@ -1,0 +1,17 @@
+{
+  "id": "slack-buckhead-prestaging-trial",
+  "system": "Slack",
+  "source": "slack",
+  "channel": "#ops-southeast",
+  "title": "Pre-staging starts at Atlanta Buckhead",
+  "date": "2026-05-13",
+  "participants": ["Marcus J. Williams", "Tasha Reed (Southeast area coach)"],
+  "access": ["*"],
+  "residency": "us",
+  "terms": ["pre-staging", "double-stack", "drive-thru-time"],
+  "entities": ["Marcus J. Williams", "Atlanta Buckhead", "Charlotte Uptown"],
+  "messages": [
+    { "from": "Marcus J. Williams", "at": "2026-05-13 07:45", "text": "Starting pre-staging in the 10am and 4pm pre-rush at Atlanta Buckhead and Charlotte Uptown today. Beef stacks held in the pans, sauce in the cold well." },
+    { "from": "Tasha Reed", "at": "2026-05-13 08:10", "text": "Good. Watch window time, not total drive-thru time, and we review after five trading days. If window time stays above 50 sec, move a crew member forward into the pre-rush." }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "voucher_usd": 5,
+  "handle_minutes": 12,
+  "escalate": {
+    "store_tickets_per_week": 4,
+    "or_secs_over": 30
+  },
+  "never": [
+    "promise a fix date that ops has not confirmed",
+    "blame the store team"
+  ]
+}

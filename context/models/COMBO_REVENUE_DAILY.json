@@ -1,0 +1,116 @@
+{
+  "name": "COMBO_REVENUE_DAILY",
+  "schema": "GOLD",
+  "alias": "c",
+  "certified": true,
+  "owner": "Finance",
+  "grain": "one row per item per region per day",
+  "description": "Certified combo and limited-time-offer revenue, gross and net of discount. No store column: region is the lowest grain.",
+  "lineage": [
+    "BRONZE.RAW_COMBO_REVENUE_DAILY",
+    "BRONZE.RAW_MENU_ITEMS"
+  ],
+  "joins": {},
+  "columns": [
+    {
+      "name": "date",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "region",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "category",
+      "type": "TEXT",
+      "description": "Combo or LTO"
+    },
+    {
+      "name": "item_name",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "sku_id",
+      "type": "TEXT",
+      "description": ""
+    },
+    {
+      "name": "is_lto",
+      "type": "BOOLEAN",
+      "description": "TRUE for a limited-time offer"
+    },
+    {
+      "name": "gross_rev",
+      "type": "REAL",
+      "description": "Before discounts"
+    },
+    {
+      "name": "net_rev",
+      "type": "REAL",
+      "description": "After discounts: the reporting figure"
+    },
+    {
+      "name": "discount_amount_usd",
+      "type": "REAL",
+      "description": ""
+    },
+    {
+      "name": "discount_rate",
+      "type": "REAL",
+      "description": ""
+    },
+    {
+      "name": "total_units",
+      "type": "INTEGER",
+      "description": ""
+    }
+  ],
+  "dimensions": {
+    "date": "c.date",
+    "region": "c.region",
+    "category": "c.category",
+    "item_name": "c.item_name",
+    "is_lto": "c.is_lto",
+    "week_start": "date(c.date, 'weekday 0', '-6 days')"
+  },
+  "metrics": {
+    "days": {
+      "sql": "COUNT(DISTINCT c.date)",
+      "as": "days"
+    },
+    "net_per_day": {
+      "sql": "SUM(c.net_rev) / COUNT(DISTINCT c.date)",
+      "as": "net_per_day",
+      "round": 0,
+      "term": "combo-revenue"
+    },
+    "gross_per_day": {
+      "sql": "SUM(c.gross_rev) / COUNT(DISTINCT c.date)",
+      "as": "gross_per_day",
+      "round": 0
+    },
+    "net_rev": {
+      "sql": "SUM(c.net_rev)",
+      "as": "net_rev",
+      "round": 0,
+      "term": "combo-revenue"
+    },
+    "gross_rev": {
+      "sql": "SUM(c.gross_rev)",
+      "as": "gross_rev",
+      "round": 0
+    },
+    "units": {
+      "sql": "SUM(c.total_units)",
+      "as": "units"
+    },
+    "discount_rate": {
+      "sql": "AVG(c.discount_rate)",
+      "as": "discount_rate",
+      "round": 2
+    }
+  }
+}

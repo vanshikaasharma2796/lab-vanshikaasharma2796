@@ -1,0 +1,18 @@
+{
+  "id": "slack-double-stack-promo",
+  "system": "Slack",
+  "source": "slack",
+  "channel": "#double-stack-promo",
+  "title": "Promo spend while single-lane stores recover",
+  "date": "2026-05-10",
+  "participants": ["Diego (Ads)", "Media agency", "Priya (Store Ops)"],
+  "access": ["corporate"],
+  "residency": "us",
+  "terms": ["double-stack", "lto", "lane-type", "combo-revenue"],
+  "entities": ["Southeast", "West"],
+  "messages": [
+    { "from": "Diego", "at": "2026-05-09 15:10", "text": "The app coupon push is driving Double Stack orders into single-lane stores that cannot stage it. Pausing the Southeast radio flight until window times come back." },
+    { "from": "Priya", "at": "2026-05-09 15:42", "text": "Good call. Dual-lane stores are coping, so if you keep spending, point it at markets with dual-lane kitchens." },
+    { "from": "Diego", "at": "2026-05-10 10:05", "text": "Shifting the app coupon to dual-lane markets in the West for two weeks. Will revisit once pre-staging is in place everywhere." }
+  ]
+}
