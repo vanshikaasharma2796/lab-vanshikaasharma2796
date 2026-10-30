@@ -10,7 +10,7 @@
    "ok": true,
    "result": {
     "ok": true,
-    "version": "47f1fde8f37b",
+    "version": "8fee05d96889",
     "mode": "overlay",
     "storage": "files",
     "warehouse": {
@@ -29,7 +29,7 @@
      "entries": 0
     },
     "evals": {
-     "cases": 26,
+     "cases": 27,
      "golden": 72
     },
     "overlay": {
@@ -52,7 +52,7 @@
     },
     "audit": {
      "id": "aud-0001",
-     "hash": "89ca68de9f76b843972bddfd3d567e958fe44fac018626d2103d1d050132a2f4"
+     "hash": "da0a5869d45a5b32f3b7767a01e961e22a25bd7267ec4bcf1c4cab64a7cd7e12"
     },
     "queued": [],
     "route.kind": "lookup",
@@ -148,7 +148,7 @@
     "pack.tokens": {
      "used": 1098,
      "budget": 4000,
-     "repo": 17613,
+     "repo": 17809,
      "instructions": 175,
      "memory": 0,
      "facts": 215,
@@ -200,9 +200,9 @@
      "estimate": 0.004752,
      "currency": "USD"
     },
-    "version": "47f1fde8f37b",
+    "version": "8fee05d96889",
     "build": {
-     "version": "47f1fde8f37b",
+     "version": "8fee05d96889",
      "sources": 18,
      "ok": 18,
      "stale": [
@@ -226,7 +226,7 @@
     },
     "audit": {
      "id": "aud-0002",
-     "hash": "52c6f536e170db3de3ee6368c781551702370d1e396b63e75c6de45884433d75"
+     "hash": "c246d12e5afa0a24c58553489b7293494423e1bf4ddfbc847c85c0b5ce337379"
     },
     "queued": [],
     "route.kind": "lookup",
@@ -332,7 +332,7 @@
     "pack.tokens": {
      "used": 1098,
      "budget": 4000,
-     "repo": 17613,
+     "repo": 17809,
      "instructions": 175,
      "memory": 36,
      "facts": 309,
@@ -384,9 +384,9 @@
      "estimate": 0.005142,
      "currency": "USD"
     },
-    "version": "47f1fde8f37b",
+    "version": "8fee05d96889",
     "build": {
-     "version": "47f1fde8f37b",
+     "version": "8fee05d96889",
      "sources": 18,
      "ok": 18,
      "stale": [
@@ -410,7 +410,7 @@
     },
     "audit": {
      "id": "aud-0003",
-     "hash": "feb33f998a7058261e227ca305276c4ce5cdf10e0c4d6e7f135920b7b0f88631"
+     "hash": "06699d25d7d8712bcc5cb7a5b9c41b258d5842c2f4b3f40adee817db4d48864c"
     },
     "queued": [
      "5a8f042745"
@@ -790,7 +790,7 @@
     "pack.tokens": {
      "used": 2590,
      "budget": 4000,
-     "repo": 17613,
+     "repo": 17809,
      "instructions": 175,
      "memory": 0,
      "facts": 170,
@@ -860,9 +860,9 @@
      "estimate": 0.009201,
      "currency": "USD"
     },
-    "version": "47f1fde8f37b",
+    "version": "8fee05d96889",
     "build": {
-     "version": "47f1fde8f37b",
+     "version": "8fee05d96889",
      "sources": 18,
      "ok": 18,
      "stale": [
@@ -886,7 +886,7 @@
     },
     "audit": {
      "id": "aud-0004",
-     "hash": "d06a724f7adb7abe86e707607600117dcd315e705196df1679021096c25ce805"
+     "hash": "1728f79ecdcfcb777e4d9d6726cbbaee62ca7bab3b01b96487830a68093423a5"
     },
     "queued": [],
     "route.kind": "blocked",
@@ -944,7 +944,7 @@
     "pack.tokens": {
      "used": 432,
      "budget": 4000,
-     "repo": 17613,
+     "repo": 17809,
      "instructions": 175,
      "memory": 0,
      "facts": 0,
@@ -996,9 +996,9 @@
      "estimate": 0.001821,
      "currency": "USD"
     },
-    "version": "47f1fde8f37b",
+    "version": "8fee05d96889",
     "build": {
-     "version": "47f1fde8f37b",
+     "version": "8fee05d96889",
      "sources": 18,
      "ok": 18,
      "stale": [
@@ -1022,7 +1022,7 @@
     },
     "audit": {
      "id": "aud-0005",
-     "hash": "f2a7a96b288fb9a86020b88629fb2baa20afa4e3656dec8a5ca6578101f6946c"
+     "hash": "9b013a0f128fe81eb51ec708bef8764e1ee94fdbd0887487bae7f5367932b4cb"
     },
     "queued": [],
     "route.kind": "blocked",
@@ -1080,7 +1080,7 @@
     "pack.tokens": {
      "used": 651,
      "budget": 4000,
-     "repo": 17613,
+     "repo": 17809,
      "instructions": 175,
      "memory": 0,
      "facts": 0,
@@ -1132,9 +1132,9 @@
      "estimate": 0.0024779999999999997,
      "currency": "USD"
     },
-    "version": "47f1fde8f37b",
+    "version": "8fee05d96889",
     "build": {
-     "version": "47f1fde8f37b",
+     "version": "8fee05d96889",
      "sources": 18,
      "ok": 18,
      "stale": [
@@ -1158,7 +1158,7 @@
     },
     "audit": {
      "id": "aud-0006",
-     "hash": "e819e366e50562aa8cd79b7f36d4c43116f4a9a95da9f3402697ba68e96450f1"
+     "hash": "cbecbb664091d7af8335758469b29c89b238fe81ad4169327d2e712d28a18629"
     },
     "queued": [],
     "route.kind": "none",
@@ -1205,7 +1205,7 @@
     "pack.tokens": {
      "used": 512,
      "budget": 4000,
-     "repo": 17613,
+     "repo": 17809,
      "instructions": 175,
      "memory": 0,
      "facts": 122,
@@ -1257,9 +1257,9 @@
      "estimate": 0.002625,
      "currency": "USD"
     },
-    "version": "47f1fde8f37b",
+    "version": "8fee05d96889",
     "build": {
-     "version": "47f1fde8f37b",
+     "version": "8fee05d96889",
      "sources": 18,
      "ok": 18,
      "stale": [
@@ -1442,7 +1442,8 @@
      "drive-thru",
      "drive thru",
      "dt time",
-     "speed of service"
+     "speed of service",
+     "service speed"
     ],
     "after": [
      "drive-thru time",
@@ -1451,10 +1452,11 @@
      "drive thru",
      "dt time",
      "speed of service",
+     "service speed",
      "queue time"
     ],
     "status": "draft",
-    "baseVersion": "47f1fde8f37b",
+    "baseVersion": "8fee05d96889",
     "test": null,
     "review": null,
     "approval": null,
@@ -1513,7 +1515,8 @@
      "drive-thru",
      "drive thru",
      "dt time",
-     "speed of service"
+     "speed of service",
+     "service speed"
     ],
     "after": [
      "drive-thru time",
@@ -1522,16 +1525,17 @@
      "drive thru",
      "dt time",
      "speed of service",
+     "service speed",
      "queue time"
     ],
     "status": "tested",
-    "baseVersion": "47f1fde8f37b",
+    "baseVersion": "8fee05d96889",
     "test": {
      "at": "2026-05-13T15:13:00Z",
      "sandbox": true,
      "version": {
-      "live": "47f1fde8f37b",
-      "sandbox": "f7c3d0f2cb46"
+      "live": "8fee05d96889",
+      "sandbox": "77784ac99f23"
      },
      "gap": {
       "persona": "priya",
@@ -1563,13 +1567,13 @@
      "goldenChanged": [],
      "evalsBefore": {
       "score": 100,
-      "passed": 26,
-      "total": 26
+      "passed": 27,
+      "total": 27
      },
      "evalsAfter": {
       "score": 100,
-      "passed": 26,
-      "total": 26
+      "passed": 27,
+      "total": 27
      },
      "broken": [],
      "fixed": []
@@ -1592,7 +1596,7 @@
       "by": null,
       "step": "test",
       "status": "tested",
-      "note": "simulated on a copy of the repository: 0 of 72 golden answers change; evals 26/26 → 26/26; the gap question is now answered"
+      "note": "simulated on a copy of the repository: 0 of 72 golden answers change; evals 27/27 → 27/27; the gap question is now answered"
      }
     ]
    }
@@ -1628,7 +1632,8 @@
      "drive-thru",
      "drive thru",
      "dt time",
-     "speed of service"
+     "speed of service",
+     "service speed"
     ],
     "after": [
      "drive-thru time",
@@ -1637,16 +1642,17 @@
      "drive thru",
      "dt time",
      "speed of service",
+     "service speed",
      "queue time"
     ],
     "status": "reviewed",
-    "baseVersion": "47f1fde8f37b",
+    "baseVersion": "8fee05d96889",
     "test": {
      "at": "2026-05-13T15:13:00Z",
      "sandbox": true,
      "version": {
-      "live": "47f1fde8f37b",
-      "sandbox": "f7c3d0f2cb46"
+      "live": "8fee05d96889",
+      "sandbox": "77784ac99f23"
      },
      "gap": {
       "persona": "priya",
@@ -1678,13 +1684,13 @@
      "goldenChanged": [],
      "evalsBefore": {
       "score": 100,
-      "passed": 26,
-      "total": 26
+      "passed": 27,
+      "total": 27
      },
      "evalsAfter": {
       "score": 100,
-      "passed": 26,
-      "total": 26
+      "passed": 27,
+      "total": 27
      },
      "broken": [],
      "fixed": []
@@ -1699,7 +1705,7 @@
       "Drafted by the engine's rules; with a model connected, the model would draft the wording.",
       "The gap question is answered after the change (none → lookup).",
       "0 of 72 golden answers change.",
-      "Evals: 26 of 26 pass now, 26 of 26 after.",
+      "Evals: 27 of 27 pass now, 27 of 27 after.",
       "Sign-off: Priya (Store Ops); the author cannot sign off."
      ]
     },
@@ -1720,7 +1726,7 @@
       "by": null,
       "step": "test",
       "status": "tested",
-      "note": "simulated on a copy of the repository: 0 of 72 golden answers change; evals 26/26 → 26/26; the gap question is now answered"
+      "note": "simulated on a copy of the repository: 0 of 72 golden answers change; evals 27/27 → 27/27; the gap question is now answered"
      },
      {
       "at": "2026-05-13T15:14:00Z",
@@ -1783,7 +1789,8 @@
      "drive-thru",
      "drive thru",
      "dt time",
-     "speed of service"
+     "speed of service",
+     "service speed"
     ],
     "after": [
      "drive-thru time",
@@ -1792,16 +1799,17 @@
      "drive thru",
      "dt time",
      "speed of service",
+     "service speed",
      "queue time"
     ],
     "status": "approved",
-    "baseVersion": "47f1fde8f37b",
+    "baseVersion": "8fee05d96889",
     "test": {
      "at": "2026-05-13T15:13:00Z",
      "sandbox": true,
      "version": {
-      "live": "47f1fde8f37b",
-      "sandbox": "f7c3d0f2cb46"
+      "live": "8fee05d96889",
+      "sandbox": "77784ac99f23"
      },
      "gap": {
       "persona": "priya",
@@ -1833,13 +1841,13 @@
      "goldenChanged": [],
      "evalsBefore": {
       "score": 100,
-      "passed": 26,
-      "total": 26
+      "passed": 27,
+      "total": 27
      },
      "evalsAfter": {
       "score": 100,
-      "passed": 26,
-      "total": 26
+      "passed": 27,
+      "total": 27
      },
      "broken": [],
      "fixed": []
@@ -1854,7 +1862,7 @@
       "Drafted by the engine's rules; with a model connected, the model would draft the wording.",
       "The gap question is answered after the change (none → lookup).",
       "0 of 72 golden answers change.",
-      "Evals: 26 of 26 pass now, 26 of 26 after.",
+      "Evals: 27 of 27 pass now, 27 of 27 after.",
       "Sign-off: Priya (Store Ops); the author cannot sign off."
      ]
     },
@@ -1879,7 +1887,7 @@
       "by": null,
       "step": "test",
       "status": "tested",
-      "note": "simulated on a copy of the repository: 0 of 72 golden answers change; evals 26/26 → 26/26; the gap question is now answered"
+      "note": "simulated on a copy of the repository: 0 of 72 golden answers change; evals 27/27 → 27/27; the gap question is now answered"
      },
      {
       "at": "2026-05-13T15:14:00Z",
@@ -1929,7 +1937,8 @@
      "drive-thru",
      "drive thru",
      "dt time",
-     "speed of service"
+     "speed of service",
+     "service speed"
     ],
     "after": [
      "drive-thru time",
@@ -1938,16 +1947,17 @@
      "drive thru",
      "dt time",
      "speed of service",
+     "service speed",
      "queue time"
     ],
     "status": "deployed",
-    "baseVersion": "47f1fde8f37b",
+    "baseVersion": "8fee05d96889",
     "test": {
      "at": "2026-05-13T15:13:00Z",
      "sandbox": true,
      "version": {
-      "live": "47f1fde8f37b",
-      "sandbox": "f7c3d0f2cb46"
+      "live": "8fee05d96889",
+      "sandbox": "77784ac99f23"
      },
      "gap": {
       "persona": "priya",
@@ -1979,13 +1989,13 @@
      "goldenChanged": [],
      "evalsBefore": {
       "score": 100,
-      "passed": 26,
-      "total": 26
+      "passed": 27,
+      "total": 27
      },
      "evalsAfter": {
       "score": 100,
-      "passed": 26,
-      "total": 26
+      "passed": 27,
+      "total": 27
      },
      "broken": [],
      "fixed": []
@@ -2000,7 +2010,7 @@
       "Drafted by the engine's rules; with a model connected, the model would draft the wording.",
       "The gap question is answered after the change (none → lookup).",
       "0 of 72 golden answers change.",
-      "Evals: 26 of 26 pass now, 26 of 26 after.",
+      "Evals: 27 of 27 pass now, 27 of 27 after.",
       "Sign-off: Priya (Store Ops); the author cannot sign off."
      ]
     },
@@ -2012,8 +2022,8 @@
     "deployment": {
      "at": "2026-05-13T15:18:00Z",
      "by": "priya",
-     "version": "f7c3d0f2cb46",
-     "previous": "47f1fde8f37b",
+     "version": "77784ac99f23",
+     "previous": "8fee05d96889",
      "files": [
       "context/glossary/drive-thru-time.md"
      ],
@@ -2034,7 +2044,7 @@
       "by": null,
       "step": "test",
       "status": "tested",
-      "note": "simulated on a copy of the repository: 0 of 72 golden answers change; evals 26/26 → 26/26; the gap question is now answered"
+      "note": "simulated on a copy of the repository: 0 of 72 golden answers change; evals 27/27 → 27/27; the gap question is now answered"
      },
      {
       "at": "2026-05-13T15:14:00Z",
@@ -2055,7 +2065,7 @@
       "by": "priya",
       "step": "deploy",
       "status": "deployed",
-      "note": "live as version f7c3d0f2cb46"
+      "note": "live as version 77784ac99f23"
      }
     ]
    }
@@ -2074,7 +2084,7 @@
     },
     "audit": {
      "id": "aud-0014",
-     "hash": "6d0223459398910bd934abfaf1439989fe2e4fa5def9a804a3e6e68b5cbc2a2f"
+     "hash": "b2502574ef564fea880d9abb71c0f346fef39542d46b13e890da010bcbcb3ea7"
     },
     "queued": [],
     "route.kind": "lookup",
@@ -2169,7 +2179,7 @@
     "pack.tokens": {
      "used": 1482,
      "budget": 4000,
-     "repo": 17613,
+     "repo": 17809,
      "instructions": 175,
      "memory": 0,
      "facts": 122,
@@ -2221,9 +2231,9 @@
      "estimate": 0.005625,
      "currency": "USD"
     },
-    "version": "f7c3d0f2cb46",
+    "version": "77784ac99f23",
     "build": {
-     "version": "f7c3d0f2cb46",
+     "version": "77784ac99f23",
      "sources": 18,
      "ok": 18,
      "stale": [
@@ -2356,7 +2366,7 @@
     "before": 0.08,
     "after": 0.1,
     "status": "draft",
-    "baseVersion": "f7c3d0f2cb46",
+    "baseVersion": "77784ac99f23",
     "test": null,
     "review": null,
     "approval": null,
@@ -2402,13 +2412,13 @@
     "before": 0.08,
     "after": 0.1,
     "status": "tested",
-    "baseVersion": "f7c3d0f2cb46",
+    "baseVersion": "77784ac99f23",
     "test": {
      "at": "2026-05-13T15:22:00Z",
      "sandbox": true,
      "version": {
-      "live": "f7c3d0f2cb46",
-      "sandbox": "7529f52f9176"
+      "live": "77784ac99f23",
+      "sandbox": "cf266eaf2eb1"
      },
      "gap": null,
      "resolves": null,
@@ -2485,13 +2495,13 @@
      ],
      "evalsBefore": {
       "score": 100,
-      "passed": 26,
-      "total": 26
+      "passed": 27,
+      "total": 27
      },
      "evalsAfter": {
       "score": 96,
-      "passed": 25,
-      "total": 26
+      "passed": 26,
+      "total": 27
      },
      "broken": [
       "pause-promo-high-impact"
@@ -2516,7 +2526,7 @@
       "by": null,
       "step": "test",
       "status": "tested",
-      "note": "simulated on a copy of the repository: 17 of 72 golden answers change; evals 26/26 → 25/26"
+      "note": "simulated on a copy of the repository: 17 of 72 golden answers change; evals 27/27 → 26/27"
      }
     ]
    }
@@ -2549,13 +2559,13 @@
     "before": 0.08,
     "after": 0.1,
     "status": "rejected",
-    "baseVersion": "f7c3d0f2cb46",
+    "baseVersion": "77784ac99f23",
     "test": {
      "at": "2026-05-13T15:22:00Z",
      "sandbox": true,
      "version": {
-      "live": "f7c3d0f2cb46",
-      "sandbox": "7529f52f9176"
+      "live": "77784ac99f23",
+      "sandbox": "cf266eaf2eb1"
      },
      "gap": null,
      "resolves": null,
@@ -2632,13 +2642,13 @@
      ],
      "evalsBefore": {
       "score": 100,
-      "passed": 26,
-      "total": 26
+      "passed": 27,
+      "total": 27
      },
      "evalsAfter": {
       "score": 96,
-      "passed": 25,
-      "total": 26
+      "passed": 26,
+      "total": 27
      },
      "broken": [
       "pause-promo-high-impact"
@@ -2667,7 +2677,7 @@
       "by": null,
       "step": "test",
       "status": "tested",
-      "note": "simulated on a copy of the repository: 17 of 72 golden answers change; evals 26/26 → 25/26"
+      "note": "simulated on a copy of the repository: 17 of 72 golden answers change; evals 27/27 → 26/27"
      },
      {
       "at": "2026-05-13T15:23:00Z",
@@ -2717,7 +2727,7 @@
     "before": "# Care desk guide: wait-time complaints\n\nA wait-time complaint is a ticket whose certified category is wait_time, whatever words the customer used.\n\n## What agents say\n\nApologise for the wait, say the store team knows and is working on it, and offer a $5 voucher. Never promise a fix date that ops has not confirmed, and never blame the store team.\n\n## Handling time\n\nPlan on 12 minutes per wait-time ticket including the follow-up note.\n\n## When to escalate to ops\n\nEscalate a store with four or more wait-time tickets in a week, or one running more than 30 sec over its benchmark. Open the escalation in ServiceNow and copy the area coach.\n\n## Personal data\n\nDo not paste customer emails or phone numbers into Slack or Teams. Reference the ticket number instead.",
     "after": "# Care desk guide: wait-time complaints\n\nA wait-time complaint is a ticket whose certified category is wait_time, whatever words the customer used.\n\n## What agents say\n\nApologise for the wait, say the store team knows and is working on it, and offer a $5 voucher. Never promise a fix date that ops has not confirmed, and never blame the store team.\n\n## Handling time\n\nPlan on 12 minutes per wait-time ticket including the follow-up note.\n\n## When to escalate to ops\n\nEscalate a store with four or more wait-time tickets in a week, or one running more than 30 sec over its benchmark. Open the escalation in ServiceNow and copy the area coach.\n\n## Personal data\n\nDo not paste customer emails or phone numbers into Slack or Teams. Reference the ticket number instead.\n\nField note (2026-05-13, Maya): Say how long customers actually waited; call me on ***-***-0182",
     "status": "draft",
-    "baseVersion": "f7c3d0f2cb46",
+    "baseVersion": "77784ac99f23",
     "test": null,
     "review": null,
     "approval": null,
@@ -2763,13 +2773,13 @@
     "before": "# Care desk guide: wait-time complaints\n\nA wait-time complaint is a ticket whose certified category is wait_time, whatever words the customer used.\n\n## What agents say\n\nApologise for the wait, say the store team knows and is working on it, and offer a $5 voucher. Never promise a fix date that ops has not confirmed, and never blame the store team.\n\n## Handling time\n\nPlan on 12 minutes per wait-time ticket including the follow-up note.\n\n## When to escalate to ops\n\nEscalate a store with four or more wait-time tickets in a week, or one running more than 30 sec over its benchmark. Open the escalation in ServiceNow and copy the area coach.\n\n## Personal data\n\nDo not paste customer emails or phone numbers into Slack or Teams. Reference the ticket number instead.",
     "after": "# Care desk guide: wait-time complaints\n\nA wait-time complaint is a ticket whose certified category is wait_time, whatever words the customer used.\n\n## What agents say\n\nApologise for the wait, say the store team knows and is working on it, and offer a $5 voucher. Never promise a fix date that ops has not confirmed, and never blame the store team.\n\n## Handling time\n\nPlan on 12 minutes per wait-time ticket including the follow-up note.\n\n## When to escalate to ops\n\nEscalate a store with four or more wait-time tickets in a week, or one running more than 30 sec over its benchmark. Open the escalation in ServiceNow and copy the area coach.\n\n## Personal data\n\nDo not paste customer emails or phone numbers into Slack or Teams. Reference the ticket number instead.\n\nField note (2026-05-13, Maya): Say how long customers actually waited; call me on ***-***-0182",
     "status": "tested",
-    "baseVersion": "f7c3d0f2cb46",
+    "baseVersion": "77784ac99f23",
     "test": {
      "at": "2026-05-13T15:26:00Z",
      "sandbox": true,
      "version": {
-      "live": "f7c3d0f2cb46",
-      "sandbox": "5ef6f65cd1c9"
+      "live": "77784ac99f23",
+      "sandbox": "1b69097354c2"
      },
      "gap": {
       "persona": "sam",
@@ -2811,13 +2821,13 @@
      ],
      "evalsBefore": {
       "score": 100,
-      "passed": 26,
-      "total": 26
+      "passed": 27,
+      "total": 27
      },
      "evalsAfter": {
       "score": 96,
-      "passed": 25,
-      "total": 26
+      "passed": 26,
+      "total": 27
      },
      "broken": [
       "pii-in-thread-masked"
@@ -2842,7 +2852,7 @@
       "by": null,
       "step": "test",
       "status": "tested",
-      "note": "simulated on a copy of the repository: 2 of 72 golden answers change; evals 26/26 → 25/26"
+      "note": "simulated on a copy of the repository: 2 of 72 golden answers change; evals 27/27 → 26/27"
      }
     ]
    }
@@ -2875,13 +2885,13 @@
     "before": "# Care desk guide: wait-time complaints\n\nA wait-time complaint is a ticket whose certified category is wait_time, whatever words the customer used.\n\n## What agents say\n\nApologise for the wait, say the store team knows and is working on it, and offer a $5 voucher. Never promise a fix date that ops has not confirmed, and never blame the store team.\n\n## Handling time\n\nPlan on 12 minutes per wait-time ticket including the follow-up note.\n\n## When to escalate to ops\n\nEscalate a store with four or more wait-time tickets in a week, or one running more than 30 sec over its benchmark. Open the escalation in ServiceNow and copy the area coach.\n\n## Personal data\n\nDo not paste customer emails or phone numbers into Slack or Teams. Reference the ticket number instead.",
     "after": "# Care desk guide: wait-time complaints\n\nA wait-time complaint is a ticket whose certified category is wait_time, whatever words the customer used.\n\n## What agents say\n\nApologise for the wait, say the store team knows and is working on it, and offer a $5 voucher. Never promise a fix date that ops has not confirmed, and never blame the store team.\n\n## Handling time\n\nPlan on 12 minutes per wait-time ticket including the follow-up note.\n\n## When to escalate to ops\n\nEscalate a store with four or more wait-time tickets in a week, or one running more than 30 sec over its benchmark. Open the escalation in ServiceNow and copy the area coach.\n\n## Personal data\n\nDo not paste customer emails or phone numbers into Slack or Teams. Reference the ticket number instead.\n\nField note (2026-05-13, Maya): Say how long customers actually waited; call me on ***-***-0182",
     "status": "reviewed",
-    "baseVersion": "f7c3d0f2cb46",
+    "baseVersion": "77784ac99f23",
     "test": {
      "at": "2026-05-13T15:26:00Z",
      "sandbox": true,
      "version": {
-      "live": "f7c3d0f2cb46",
-      "sandbox": "5ef6f65cd1c9"
+      "live": "77784ac99f23",
+      "sandbox": "1b69097354c2"
      },
      "gap": {
       "persona": "sam",
@@ -2923,13 +2933,13 @@
      ],
      "evalsBefore": {
       "score": 100,
-      "passed": 26,
-      "total": 26
+      "passed": 27,
+      "total": 27
      },
      "evalsAfter": {
       "score": 96,
-      "passed": 25,
-      "total": 26
+      "passed": 26,
+      "total": 27
      },
      "broken": [
       "pii-in-thread-masked"
@@ -2946,7 +2956,7 @@
       "Drafted by the engine's rules; with a model connected, the model would draft the wording.",
       "No gap question to re-ask.",
       "2 of 72 golden answers change: sam/burger-or-drive-thru (facts), typed-21 (context.answer).",
-      "Evals: 26 of 26 pass now, 25 of 26 after; it breaks pii-in-thread-masked.",
+      "Evals: 27 of 27 pass now, 26 of 27 after; it breaks pii-in-thread-masked.",
       "Sign-off: Sam (Customer Support); the author cannot sign off."
      ]
     },
@@ -2967,7 +2977,7 @@
       "by": null,
       "step": "test",
       "status": "tested",
-      "note": "simulated on a copy of the repository: 2 of 72 golden answers change; evals 26/26 → 25/26"
+      "note": "simulated on a copy of the repository: 2 of 72 golden answers change; evals 27/27 → 26/27"
      },
      {
       "at": "2026-05-13T15:27:00Z",
@@ -3007,13 +3017,13 @@
     "before": "# Care desk guide: wait-time complaints\n\nA wait-time complaint is a ticket whose certified category is wait_time, whatever words the customer used.\n\n## What agents say\n\nApologise for the wait, say the store team knows and is working on it, and offer a $5 voucher. Never promise a fix date that ops has not confirmed, and never blame the store team.\n\n## Handling time\n\nPlan on 12 minutes per wait-time ticket including the follow-up note.\n\n## When to escalate to ops\n\nEscalate a store with four or more wait-time tickets in a week, or one running more than 30 sec over its benchmark. Open the escalation in ServiceNow and copy the area coach.\n\n## Personal data\n\nDo not paste customer emails or phone numbers into Slack or Teams. Reference the ticket number instead.",
     "after": "# Care desk guide: wait-time complaints\n\nA wait-time complaint is a ticket whose certified category is wait_time, whatever words the customer used.\n\n## What agents say\n\nApologise for the wait, say the store team knows and is working on it, and offer a $5 voucher. Never promise a fix date that ops has not confirmed, and never blame the store team.\n\n## Handling time\n\nPlan on 12 minutes per wait-time ticket including the follow-up note.\n\n## When to escalate to ops\n\nEscalate a store with four or more wait-time tickets in a week, or one running more than 30 sec over its benchmark. Open the escalation in ServiceNow and copy the area coach.\n\n## Personal data\n\nDo not paste customer emails or phone numbers into Slack or Teams. Reference the ticket number instead.\n\nField note (2026-05-13, Maya): Say how long customers actually waited; call me on ***-***-0182",
     "status": "approved",
-    "baseVersion": "f7c3d0f2cb46",
+    "baseVersion": "77784ac99f23",
     "test": {
      "at": "2026-05-13T15:26:00Z",
      "sandbox": true,
      "version": {
-      "live": "f7c3d0f2cb46",
-      "sandbox": "5ef6f65cd1c9"
+      "live": "77784ac99f23",
+      "sandbox": "1b69097354c2"
      },
      "gap": {
       "persona": "sam",
@@ -3055,13 +3065,13 @@
      ],
      "evalsBefore": {
       "score": 100,
-      "passed": 26,
-      "total": 26
+      "passed": 27,
+      "total": 27
      },
      "evalsAfter": {
       "score": 96,
-      "passed": 25,
-      "total": 26
+      "passed": 26,
+      "total": 27
      },
      "broken": [
       "pii-in-thread-masked"
@@ -3078,7 +3088,7 @@
       "Drafted by the engine's rules; with a model connected, the model would draft the wording.",
       "No gap question to re-ask.",
       "2 of 72 golden answers change: sam/burger-or-drive-thru (facts), typed-21 (context.answer).",
-      "Evals: 26 of 26 pass now, 25 of 26 after; it breaks pii-in-thread-masked.",
+      "Evals: 27 of 27 pass now, 26 of 27 after; it breaks pii-in-thread-masked.",
       "Sign-off: Sam (Customer Support); the author cannot sign off."
      ]
     },
@@ -3103,7 +3113,7 @@
       "by": null,
       "step": "test",
       "status": "tested",
-      "note": "simulated on a copy of the repository: 2 of 72 golden answers change; evals 26/26 → 25/26"
+      "note": "simulated on a copy of the repository: 2 of 72 golden answers change; evals 27/27 → 26/27"
      },
      {
       "at": "2026-05-13T15:27:00Z",
@@ -3150,13 +3160,13 @@
     "before": "# Care desk guide: wait-time complaints\n\nA wait-time complaint is a ticket whose certified category is wait_time, whatever words the customer used.\n\n## What agents say\n\nApologise for the wait, say the store team knows and is working on it, and offer a $5 voucher. Never promise a fix date that ops has not confirmed, and never blame the store team.\n\n## Handling time\n\nPlan on 12 minutes per wait-time ticket including the follow-up note.\n\n## When to escalate to ops\n\nEscalate a store with four or more wait-time tickets in a week, or one running more than 30 sec over its benchmark. Open the escalation in ServiceNow and copy the area coach.\n\n## Personal data\n\nDo not paste customer emails or phone numbers into Slack or Teams. Reference the ticket number instead.",
     "after": "# Care desk guide: wait-time complaints\n\nA wait-time complaint is a ticket whose certified category is wait_time, whatever words the customer used.\n\n## What agents say\n\nApologise for the wait, say the store team knows and is working on it, and offer a $5 voucher. Never promise a fix date that ops has not confirmed, and never blame the store team.\n\n## Handling time\n\nPlan on 12 minutes per wait-time ticket including the follow-up note.\n\n## When to escalate to ops\n\nEscalate a store with four or more wait-time tickets in a week, or one running more than 30 sec over its benchmark. Open the escalation in ServiceNow and copy the area coach.\n\n## Personal data\n\nDo not paste customer emails or phone numbers into Slack or Teams. Reference the ticket number instead.\n\nField note (2026-05-13, Maya): Say how long customers actually waited; call me on ***-***-0182",
     "status": "deployed",
-    "baseVersion": "f7c3d0f2cb46",
+    "baseVersion": "77784ac99f23",
     "test": {
      "at": "2026-05-13T15:26:00Z",
      "sandbox": true,
      "version": {
-      "live": "f7c3d0f2cb46",
-      "sandbox": "5ef6f65cd1c9"
+      "live": "77784ac99f23",
+      "sandbox": "1b69097354c2"
      },
      "gap": {
       "persona": "sam",
@@ -3198,13 +3208,13 @@
      ],
      "evalsBefore": {
       "score": 100,
-      "passed": 26,
-      "total": 26
+      "passed": 27,
+      "total": 27
      },
      "evalsAfter": {
       "score": 96,
-      "passed": 25,
-      "total": 26
+      "passed": 26,
+      "total": 27
      },
      "broken": [
       "pii-in-thread-masked"
@@ -3221,7 +3231,7 @@
       "Drafted by the engine's rules; with a model connected, the model would draft the wording.",
       "No gap question to re-ask.",
       "2 of 72 golden answers change: sam/burger-or-drive-thru (facts), typed-21 (context.answer).",
-      "Evals: 26 of 26 pass now, 25 of 26 after; it breaks pii-in-thread-masked.",
+      "Evals: 27 of 27 pass now, 26 of 27 after; it breaks pii-in-thread-masked.",
       "Sign-off: Sam (Customer Support); the author cannot sign off."
      ]
     },
@@ -3233,8 +3243,8 @@
     "deployment": {
      "at": "2026-05-13T15:29:00Z",
      "by": "sam",
-     "version": "5ef6f65cd1c9",
-     "previous": "f7c3d0f2cb46",
+     "version": "1b69097354c2",
+     "previous": "77784ac99f23",
      "files": [
       "context/knowledge/complaint-handling-guide.md"
      ],
@@ -3255,7 +3265,7 @@
       "by": null,
       "step": "test",
       "status": "tested",
-      "note": "simulated on a copy of the repository: 2 of 72 golden answers change; evals 26/26 → 25/26"
+      "note": "simulated on a copy of the repository: 2 of 72 golden answers change; evals 27/27 → 26/27"
      },
      {
       "at": "2026-05-13T15:27:00Z",
@@ -3276,7 +3286,7 @@
       "by": "sam",
       "step": "deploy",
       "status": "deployed",
-      "note": "live as version 5ef6f65cd1c9"
+      "note": "live as version 1b69097354c2"
      }
     ]
    }
@@ -3288,15 +3298,15 @@
    "at": "2026-05-13T15:30:00Z",
    "ok": true,
    "result": {
-    "current": "5ef6f65cd1c9",
-    "base": "47f1fde8f37b",
+    "current": "1b69097354c2",
+    "base": "8fee05d96889",
     "active": [
      "chg-0001",
      "chg-0003"
     ],
     "history": [
      {
-      "version": "47f1fde8f37b",
+      "version": "8fee05d96889",
       "previous": null,
       "at": "2026-05-13T15:00:00Z",
       "by": null,
@@ -3305,8 +3315,8 @@
       "note": "the context as first loaded"
      },
      {
-      "version": "f7c3d0f2cb46",
-      "previous": "47f1fde8f37b",
+      "version": "77784ac99f23",
+      "previous": "8fee05d96889",
       "at": "2026-05-13T15:18:00Z",
       "by": "priya",
       "kind": "deploy",
@@ -3316,8 +3326,8 @@
       ]
      },
      {
-      "version": "5ef6f65cd1c9",
-      "previous": "f7c3d0f2cb46",
+      "version": "1b69097354c2",
+      "previous": "77784ac99f23",
       "at": "2026-05-13T15:29:00Z",
       "by": "sam",
       "kind": "deploy",
@@ -3336,9 +3346,9 @@
    "at": "2026-05-13T15:31:00Z",
    "ok": true,
    "result": {
-    "version": "f7c3d0f2cb46",
-    "previous": "5ef6f65cd1c9",
-    "target": "f7c3d0f2cb46",
+    "version": "77784ac99f23",
+    "previous": "1b69097354c2",
+    "target": "77784ac99f23",
     "matches": true,
     "undone": [
      "chg-0003"
@@ -3352,9 +3362,9 @@
    "at": "2026-05-13T15:32:00Z",
    "ok": true,
    "result": {
-    "version": "47f1fde8f37b",
-    "previous": "f7c3d0f2cb46",
-    "target": "47f1fde8f37b",
+    "version": "8fee05d96889",
+    "previous": "77784ac99f23",
+    "target": "8fee05d96889",
     "matches": true,
     "undone": [
      "chg-0001"
@@ -3385,7 +3395,7 @@
     },
     "audit": {
      "id": "aud-0025",
-     "hash": "95c8bf7bad295e2f37ec00efaa6640ae2d31f394cd9fc57dc9924d6d960bb0ff"
+     "hash": "0bafee2c6ac14ae9f42e6e0bfe225d14ce681e587492fc756ad66f255fba9aa5"
     },
     "queued": [],
     "route.kind": "none",
@@ -3432,7 +3442,7 @@
     "pack.tokens": {
      "used": 512,
      "budget": 4000,
-     "repo": 17613,
+     "repo": 17809,
      "instructions": 175,
      "memory": 0,
      "facts": 122,
@@ -3484,9 +3494,9 @@
      "estimate": 0.002625,
      "currency": "USD"
     },
-    "version": "47f1fde8f37b",
+    "version": "8fee05d96889",
     "build": {
-     "version": "47f1fde8f37b",
+     "version": "8fee05d96889",
      "sources": 18,
      "ok": 18,
      "stale": [
@@ -3510,7 +3520,7 @@
     },
     "audit": {
      "id": "aud-0026",
-     "hash": "7b783efe782b74e2636e0f1074645c836259d0b7d401b52d66fd38fecaa06ea3"
+     "hash": "559b033235c367471c145c26f13406bee7a98f39737e5b309c821d6d86cad2cc"
     },
     "queued": [
      "c883e14173"
@@ -3816,7 +3826,7 @@
     "pack.tokens": {
      "used": 3161,
      "budget": 4000,
-     "repo": 17613,
+     "repo": 17809,
      "instructions": 175,
      "memory": 0,
      "facts": 0,
@@ -3886,9 +3896,9 @@
      "estimate": 0.010404,
      "currency": "USD"
     },
-    "version": "47f1fde8f37b",
+    "version": "8fee05d96889",
     "build": {
-     "version": "47f1fde8f37b",
+     "version": "8fee05d96889",
      "sources": 18,
      "ok": 18,
      "stale": [
@@ -3912,7 +3922,7 @@
     },
     "audit": {
      "id": "aud-0027",
-     "hash": "494b467e2229dd5cadade0d26f38cd444a8ecef03c22595a158702f6d5445c56"
+     "hash": "219f7362d3dad38beb60fbc2b81bb2f87fb9952af746ffc1b2dc6048df27059c"
     },
     "queued": [
      "79977d5887"
@@ -4184,7 +4194,7 @@
     "pack.tokens": {
      "used": 2875,
      "budget": 4000,
-     "repo": 17613,
+     "repo": 17809,
      "instructions": 175,
      "memory": 0,
      "facts": 256,
@@ -4254,9 +4264,9 @@
      "estimate": 0.010314,
      "currency": "USD"
     },
-    "version": "47f1fde8f37b",
+    "version": "8fee05d96889",
     "build": {
-     "version": "47f1fde8f37b",
+     "version": "8fee05d96889",
      "sources": 18,
      "ok": 18,
      "stale": [
@@ -4280,7 +4290,7 @@
     },
     "audit": {
      "id": "aud-0028",
-     "hash": "e768c8702861f78477f9dc6b3a46e05aa1ec03aedc22c69ec05a359941cb3fc0"
+     "hash": "f0ffa9f1776ba51d29ae184bf615bd3e36eb8aac6df551534c5b62d1a4a7c7bb"
     },
     "queued": [
      "fdade4cb8e"
@@ -4660,7 +4670,7 @@
     "pack.tokens": {
      "used": 3228,
      "budget": 4000,
-     "repo": 17613,
+     "repo": 17809,
      "instructions": 175,
      "memory": 0,
      "facts": 124,
@@ -4730,9 +4740,9 @@
      "estimate": 0.010976999999999999,
      "currency": "USD"
     },
-    "version": "47f1fde8f37b",
+    "version": "8fee05d96889",
     "build": {
-     "version": "47f1fde8f37b",
+     "version": "8fee05d96889",
      "sources": 18,
      "ok": 18,
      "stale": [
@@ -4756,7 +4766,7 @@
     },
     "audit": {
      "id": "aud-0029",
-     "hash": "35faa949027d09e648d79533cf0d39bf8ac27a3069703e026a24932062d252cb"
+     "hash": "348fcc9d52d7298cc1caffe659a11c63f4caeadbf777a84bdabfa4e793941cdd"
     },
     "queued": [
      "da1a56adcc"
@@ -5120,7 +5130,7 @@
     "pack.tokens": {
      "used": 2632,
      "budget": 4000,
-     "repo": 17613,
+     "repo": 17809,
      "instructions": 175,
      "memory": 0,
      "facts": 205,
@@ -5190,9 +5200,9 @@
      "estimate": 0.009432000000000001,
      "currency": "USD"
     },
-    "version": "47f1fde8f37b",
+    "version": "8fee05d96889",
     "build": {
-     "version": "47f1fde8f37b",
+     "version": "8fee05d96889",
      "sources": 18,
      "ok": 18,
      "stale": [
@@ -5595,10 +5605,10 @@
    "ok": true,
    "result": {
     "at": "2026-05-13T15:50:00Z",
-    "version": "47f1fde8f37b",
+    "version": "8fee05d96889",
     "score": 100,
-    "passed": 26,
-    "total": 26,
+    "passed": 27,
+    "total": 27,
     "cases": [
      {
       "id": "diagnosis-operator",
@@ -5833,6 +5843,15 @@
       "route": "none",
       "analysis": "no-match",
       "quality": 70
+     },
+     {
+      "id": "knowledge-cleaning-rota",
+      "title": "A new knowledge page is retrieved and quoted as also relevant",
+      "ok": true,
+      "failures": [],
+      "route": "none",
+      "analysis": "no-match",
+      "quality": 69
      }
     ]
    }
@@ -5860,8 +5879,8 @@
        "needsApproval": true,
        "note": "Covered by the network retrofit order."
       },
-      "prev": "942d0fcfa9662d241e7f50073896b6999fe0ede2b502fce05141e06c5abc52f1",
-      "hash": "87bcb2aec3e2965d5f54351b628243f1ce2c3378ff6d6ce1c5bb6f8271255bfe"
+      "prev": "5b2014b0c1d572a35b63f6c6812e078548bca64cf8b916476d841c34edda8b86",
+      "hash": "00d6b04f377418b50cb0aa681f866d9bb9fcf14335bf3a807d8f2e5d594bdc8a"
      },
      {
       "id": "aud-0033",
@@ -5876,8 +5895,8 @@
        "table": "OPS.ACTION_LOG",
        "outbox": "out-0002"
       },
-      "prev": "455570a38d86d704c30d7779f1224069a0773e043f55cbaa9d0962f4aa4f40a8",
-      "hash": "942d0fcfa9662d241e7f50073896b6999fe0ede2b502fce05141e06c5abc52f1"
+      "prev": "b6c4c9c3748a501b77a52b1aa7959f7852282b391d47bdedd46257faae77cd76",
+      "hash": "5b2014b0c1d572a35b63f6c6812e078548bca64cf8b916476d841c34edda8b86"
      },
      {
       "id": "aud-0032",
@@ -5892,8 +5911,8 @@
        "needsApproval": false,
        "note": null
       },
-      "prev": "76fc90904c4f7bbc4fa7441728bea3b2dca7171872e96736226d0b009da31cbd",
-      "hash": "455570a38d86d704c30d7779f1224069a0773e043f55cbaa9d0962f4aa4f40a8"
+      "prev": "87b7e9ac0b0353d85b7bc087d6135143e1efc57843c4fef860fb34e79507e339",
+      "hash": "b6c4c9c3748a501b77a52b1aa7959f7852282b391d47bdedd46257faae77cd76"
      },
      {
       "id": "aud-0031",
@@ -5908,8 +5927,8 @@
        "table": "OPS.ACTION_LOG",
        "outbox": "out-0001"
       },
-      "prev": "b783f6f6033c64625d99bd152004e1a01b3055ed726b57afc60faab0c78d330a",
-      "hash": "76fc90904c4f7bbc4fa7441728bea3b2dca7171872e96736226d0b009da31cbd"
+      "prev": "24933c45d989f877c4f144c5e24dd5194bae0b14ffe71ddbb71f34e5484666b0",
+      "hash": "87b7e9ac0b0353d85b7bc087d6135143e1efc57843c4fef860fb34e79507e339"
      },
      {
       "id": "aud-0030",
@@ -5924,8 +5943,8 @@
        "needsApproval": true,
        "note": "Order the 17 kits; Atlanta first."
       },
-      "prev": "35faa949027d09e648d79533cf0d39bf8ac27a3069703e026a24932062d252cb",
-      "hash": "b783f6f6033c64625d99bd152004e1a01b3055ed726b57afc60faab0c78d330a"
+      "prev": "348fcc9d52d7298cc1caffe659a11c63f4caeadbf777a84bdabfa4e793941cdd",
+      "hash": "24933c45d989f877c4f144c5e24dd5194bae0b14ffe71ddbb71f34e5484666b0"
      }
     ]
    }
@@ -5942,7 +5961,7 @@
     "total": 34,
     "anchor": null,
     "broken": null,
-    "head": "87bcb2aec3e2965d5f54351b628243f1ce2c3378ff6d6ce1c5bb6f8271255bfe"
+    "head": "00d6b04f377418b50cb0aa681f866d9bb9fcf14335bf3a807d8f2e5d594bdc8a"
    }
   },
   {
@@ -5953,7 +5972,7 @@
    "ok": true,
    "result": {
     "at": "2026-05-13T15:53:00Z",
-    "version": "47f1fde8f37b",
+    "version": "8fee05d96889",
     "versions": 5,
     "answers": 12,
     "avgQuality": 88.8,
@@ -6020,8 +6039,8 @@
        "question": "queue time by region this week",
        "log": "log-0008",
        "previous": "log-0007",
-       "version": "47f1fde8f37b",
-       "previousVersion": "f7c3d0f2cb46",
+       "version": "8fee05d96889",
+       "previousVersion": "77784ac99f23",
        "added": [
         "I don't have a certified way to answer that"
        ],
@@ -6190,14 +6209,14 @@
     "audit": {
      "entries": 34,
      "ok": true,
-     "head": "87bcb2aec3e2965d5f54351b628243f1ce2c3378ff6d6ce1c5bb6f8271255bfe"
+     "head": "00d6b04f377418b50cb0aa681f866d9bb9fcf14335bf3a807d8f2e5d594bdc8a"
     },
     "evals": {
      "at": "2026-05-13T15:50:00Z",
-     "version": "47f1fde8f37b",
+     "version": "8fee05d96889",
      "score": 100,
-     "passed": 26,
-     "total": 26
+     "passed": 27,
+     "total": 27
     },
     "retention": {
      "logDays": 30,
@@ -6235,7 +6254,7 @@
       "snippet": "Do not paste customer emails or phone numbers into Slack or Teams. Reference the ticket number instead.",
       "masked": false,
       "score": 1,
-      "keyword": 12.831758170893242,
+      "keyword": 13.040215059155077,
       "vector": 0.5583859523616902
      },
      {
@@ -6251,7 +6270,7 @@
       "snippet": "I waited nine minutes at the Atlanta Buckhead drive-thru for a Double Stack at lunch. Please call me back on ***-***-0182 or write to j***@example.com.",
       "masked": false,
       "score": 0.9760624679979518,
-      "keyword": 6.629259839213057,
+      "keyword": 6.735144478049215,
       "vector": 0.5534751114756711
      },
      {
@@ -6267,7 +6286,7 @@
       "snippet": "Plan the care queue for the next four weeks at 12 minutes a ticket.",
       "masked": false,
       "score": 0.8531468531468531,
-      "keyword": 3.0100009008492123,
+      "keyword": 3.0650457462042366,
       "vector": 0.23122932520643205
      }
     ],
@@ -6298,8 +6317,8 @@
       "channel": null,
       "snippet": "Five or more stores at 30 sec or more over benchmark, or stores more than 5 sec over for four weeks running, put the operator on the corporate intervention list.",
       "masked": false,
-      "score": 3.017511443188093,
-      "keyword": 3.017511443188093,
+      "score": 3.066896248497855,
+      "keyword": 3.066896248497855,
       "vector": 0.42490600068232964
      },
      {
@@ -6314,8 +6333,8 @@
       "channel": null,
       "snippet": "If fill rate keeps falling for four weeks, the franchise business partner schedules a staffing review with the operator and People.",
       "masked": false,
-      "score": 2.4696901388434864,
-      "keyword": 2.4696901388434864,
+      "score": 2.5306052260828333,
+      "keyword": 2.5306052260828333,
       "vector": 0.23641391634552508
      },
      {
@@ -6330,8 +6349,8 @@
       "channel": null,
       "snippet": "Review window time after five trading days.",
       "masked": false,
-      "score": 2.421045642592715,
-      "keyword": 2.421045642592715,
+      "score": 2.4807348338526625,
+      "keyword": 2.4807348338526625,
       "vector": 0.2734741704192992
      }
     ],
@@ -6355,7 +6374,8 @@
      "drive-thru",
      "drive thru",
      "dt time",
-     "speed of service"
+     "speed of service",
+     "service speed"
     ],
     "maps_to": "GOLD.ORDER_TIMING_MART.avg_dt_secs",
     "not": "BRONZE.RAW_POS_DAILY.AVG_SERVICE_SECS",
@@ -6518,7 +6538,7 @@
    "at": "2026-05-13T15:59:00Z",
    "ok": true,
    "result": {
-    "version": "47f1fde8f37b",
+    "version": "8fee05d96889",
     "today": "2026-05-13",
     "region": "us",
     "kinds": {
@@ -6805,9 +6825,9 @@
       "system": "Confluence",
       "connector": "files",
       "ok": true,
-      "items": 4,
+      "items": 5,
       "updated": "2026-05-12",
-      "detail": "4 pages",
+      "detail": "5 pages",
       "status": "fresh",
       "ageHours": 24,
       "slaHours": 2160,
@@ -7063,8 +7083,8 @@
    "result": {
     "format": "mccontext-changes/1",
     "exported": "2026-05-13T16:00:00Z",
-    "base": "47f1fde8f37b",
-    "current": "47f1fde8f37b",
+    "base": "8fee05d96889",
+    "current": "8fee05d96889",
     "changes": []
    }
   },
@@ -7107,12 +7127,12 @@
     "total": 1,
     "anchor": {
      "seq": 34,
-     "hash": "87bcb2aec3e2965d5f54351b628243f1ce2c3378ff6d6ce1c5bb6f8271255bfe",
+     "hash": "00d6b04f377418b50cb0aa681f866d9bb9fcf14335bf3a807d8f2e5d594bdc8a",
      "purged": 34,
      "at": "2026-06-20T09:00:00Z"
     },
     "broken": null,
-    "head": "c0ea9869c0335b88a1b003f1f7bf89c8d12742181a20e457de77f936fbcc577d"
+    "head": "58f84dd61f15db8147402ca16fa46a021c7d85ecf7fc7c0da90ea6aab6f48976"
    }
   },
   {
@@ -7135,7 +7155,7 @@
    "ok": true,
    "result": {
     "at": "2026-06-20T09:03:00Z",
-    "version": "47f1fde8f37b",
+    "version": "8fee05d96889",
     "versions": 5,
     "answers": 0,
     "avgQuality": null,
@@ -7350,14 +7370,14 @@
     "audit": {
      "entries": 1,
      "ok": true,
-     "head": "c0ea9869c0335b88a1b003f1f7bf89c8d12742181a20e457de77f936fbcc577d"
+     "head": "58f84dd61f15db8147402ca16fa46a021c7d85ecf7fc7c0da90ea6aab6f48976"
     },
     "evals": {
      "at": "2026-05-13T15:50:00Z",
-     "version": "47f1fde8f37b",
+     "version": "8fee05d96889",
      "score": 100,
-     "passed": 26,
-     "total": 26
+     "passed": 27,
+     "total": 27
     },
     "retention": {
      "logDays": 30,

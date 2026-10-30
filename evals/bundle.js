@@ -436,6 +436,21 @@
      "I don't have a certified way to answer that"
     ]
    }
+  },
+  {
+   "id": "knowledge-cleaning-rota",
+   "title": "A new knowledge page is retrieved and quoted as also relevant",
+   "persona": "priya",
+   "question": "What is the kitchen equipment cleaning rota?",
+   "expect": {
+    "route": "none",
+    "facts": [
+     "doc:kitchen-cleaning-rota"
+    ],
+    "contains": [
+     "Also relevant"
+    ]
+   }
   }
  ],
  "golden": [
@@ -740,7 +755,7 @@
     "guard": "fedce8e8af485c25",
     "answer": "390932a12202fc41",
     "marks": "4d8b3deaae2e1bb7",
-    "facts": "9f2060009693e594",
+    "facts": "c7fea9f616ef52c5",
     "actions": "4f53cda18c2baa0c",
     "validation": "b5bea41b6c623f7c"
    }
@@ -1362,7 +1377,7 @@
     "guard": "fedce8e8af485c25",
     "answer": "b3c0bfc96f5b130a",
     "marks": "dc9cbf9defeb9d26",
-    "facts": "ab4c39fed6903f4f",
+    "facts": "51910bebdc7798e7",
     "actions": "4f53cda18c2baa0c",
     "validation": "b5bea41b6c623f7c"
    }

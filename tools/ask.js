@@ -96,7 +96,7 @@ async function main() {
     return;
   }
 
-  if (words.length < 2) { console.log('Usage: node tools/ask.js <persona> <slug or "question"> [--sql] [--rows] [--context]   |   --all [persona]   |   --list'); return; }
+  if (words.length < 2) { console.log('Usage: node tools/ask.js <persona> <slug or "question"> [--sql] [--rows] [--context] [--json]   |   --all [persona]   |   --list'); return; }
   const input = findQuestion(words[0], words.slice(1).join(' '));
   const history = [];
   after.forEach((earlier) => {
@@ -106,6 +106,22 @@ async function main() {
   if (history.length) input.history = history;
   const result = MCX.engine.ask(input);
   const pack = result.pack;
+  if (flags.has('--json')) {   // one machine-readable summary instead of the full printout
+    const problems = check(result);
+    console.log(JSON.stringify({
+      question: input.question,
+      persona: pack.persona.name,
+      route: result.route.kind,
+      analysis: result.plan.name,
+      tokens: { used: pack.tokens.used, budget: pack.tokens.budget },
+      queries: result.context.steps.filter((s) => s.sql).length,
+      findings: result.context.marks.filter((m) => m.good).length,
+      answer: result.context.answer,
+      problems
+    }, null, 2));
+    process.exitCode = problems.length ? 1 : 0;
+    return;
+  }
   console.log('Question : ' + input.question);
   console.log('Asked by : ' + pack.persona.name + '   scope: ' + pack.scope.chip);
   console.log('Route    : ' + result.route.kind + ' → ' + result.plan.name + '  (' + result.route.why + ')');

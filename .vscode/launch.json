@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Open the site in Chrome (starts the server)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3242/",
+      "preLaunchTask": "Lab: start server (background)"
+    },
+    {
+      "name": "Debug: validate.js",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/tools/validate.js",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Debug: ask.js (Marcus, drive-thru-up)",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/tools/ask.js",
+      "args": ["marcus", "drive-thru-up", "--ctx"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Debug: server.js (page + API)",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/tools/server.js",
+      "console": "integratedTerminal"
+    }
+  ]
+}

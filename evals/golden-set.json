@@ -80,6 +80,17 @@
       "expect": { "route": "lookup", "memory": 1, "contains": ["Midwest's 35 stores"] } },
     { "id": "no-memory-without-history", "title": "Without the session, the same follow-up has no certified answer",
       "persona": "maya", "question": "and the Midwest?",
-      "expect": { "route": "none", "memory": 0, "contains": ["I don't have a certified way to answer that"] } }
+      "expect": { "route": "none", "memory": 0, "contains": ["I don't have a certified way to answer that"] } },
+    {
+      "id": "knowledge-cleaning-rota",
+      "title": "A new knowledge page is retrieved and quoted as also relevant",
+      "persona": "priya",
+      "question": "What is the kitchen equipment cleaning rota?",
+      "expect": {
+        "route": "none",
+        "facts": ["doc:kitchen-cleaning-rota"],
+        "contains": ["Also relevant"]
+      }
+    }
   ]
 }

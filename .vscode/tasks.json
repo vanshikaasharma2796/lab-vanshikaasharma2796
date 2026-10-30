@@ -1,0 +1,55 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Lab: validate everything",
+      "type": "shell",
+      "command": "node tools/validate.js",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Lab: ask Marcus why drive-thru is up",
+      "type": "shell",
+      "command": "node tools/ask.js marcus drive-thru-up --ctx",
+      "problemMatcher": []
+    },
+    {
+      "label": "Lab: run the business evals",
+      "type": "shell",
+      "command": "node tools/eval.js",
+      "problemMatcher": []
+    },
+    {
+      "label": "Lab: rebuild context bundle",
+      "type": "shell",
+      "command": "node tools/build-context.js",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Lab: start server (background)",
+      "type": "shell",
+      "command": "sh scripts/start.sh",
+      "problemMatcher": []
+    },
+    {
+      "label": "Lab: stop server",
+      "type": "shell",
+      "command": "sh scripts/stop.sh",
+      "problemMatcher": []
+    },
+    {
+      "label": "Lab: smoke test",
+      "type": "shell",
+      "command": "node scripts/smoke-test.js",
+      "problemMatcher": []
+    }
+  ]
+}

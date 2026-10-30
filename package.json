@@ -16,7 +16,8 @@
     "golden": "node tools/golden.js",
     "scenario": "node tools/scenario.js",
     "lifecycle": "node tools/lifecycle.js",
-    "bundle:web": "node tools/web-bundle.js"
+    "bundle:web": "node tools/web-bundle.js",
+    "smoke": "node scripts/smoke-test.js"
   },
   "engines": {
     "node": ">=18"

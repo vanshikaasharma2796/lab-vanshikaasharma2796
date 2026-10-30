@@ -216,7 +216,8 @@
     "drive-thru",
     "drive thru",
     "dt time",
-    "speed of service"
+    "speed of service",
+    "service speed"
    ],
    "maps_to": "GOLD.ORDER_TIMING_MART.avg_dt_secs",
    "not": "BRONZE.RAW_POS_DAILY.AVG_SERVICE_SECS",
@@ -2622,6 +2623,24 @@
    "status": "approved",
    "body": "# Honey Heat Chicken launch readiness checklist\n\nHoney Heat Chicken is the next limited-time offer, planned for June 4. Like the Double Stack it is a two-step item: fry, then a sauce toss.\n\n## A kitchen is ready when\n\nIt has parallel staging, or its window time is under 45 sec on the current menu. Kitchens that are neither should not get the item on day one.\n\n## Four weeks out\n\nSupply Chain confirms sauce cover and fry-oil stock by region. Store Ops confirms which single-lane kitchens are still exposed.\n\n## Two weeks out\n\nMarketing holds paid media in regions where exposed kitchens are still over the window limit. Care desk gets the wait-time script.\n\n## Launch week\n\nPre-stage from day one in the 10am and 4pm pre-rush. Review window time after five trading days.",
    "file": "context/knowledge/honey-heat-readiness-checklist.md"
+  },
+  "kitchen-cleaning-rota": {
+   "terms": [
+    "kitchen-equipment"
+   ],
+   "entities": [],
+   "access": [
+    "*"
+   ],
+   "id": "kitchen-cleaning-rota",
+   "title": "Kitchen equipment cleaning rota",
+   "system": "Confluence",
+   "source": "confluence-ops",
+   "owner": "Store Ops",
+   "updated": "2026-05-12",
+   "status": "approved",
+   "body": "# Kitchen equipment cleaning rota\n\nEvery kitchen follows the same cleaning rota for its equipment, so that no cleaning task lands in the lunch or dinner rush.\n\n## Daily\n\nFilter the fryer oil after the lunch rush and again at close. Scrape the grill plates between the lunch and dinner rush, never during it. Empty and wipe the heated holding pans at close.\n\n## Weekly\n\nBoil out one fryer vat each Tuesday after close. Descale the beverage station on Sunday night. The shift manager signs the rota sheet when each task is done.\n\n## Who to call\n\nIf a fryer or grill fails its daily check, log a ticket with the equipment desk and move the item to the other fryer or grill until it is fixed.",
+   "file": "context/knowledge/kitchen-cleaning-rota.md"
   },
   "pre-staging-how-to": {
    "terms": [
